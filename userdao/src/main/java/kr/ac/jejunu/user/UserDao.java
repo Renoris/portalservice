@@ -4,11 +4,7 @@ import java.sql.*;
 public class UserDao {
     public User get(Integer id) throws ClassNotFoundException, SQLException {
         //mysql
-        //driver 로딩
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        //connection
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/jeju?serverTimezone=Asia/Seoul", "jeju", "jejupw");
-        //query
+        Connection connection = getConnection();
         PreparedStatement preparedStatement=
                 connection.prepareStatement("select id , name, password from userinfo where id =? ");//statement와 preparestatement의 차이점 preparestatement로 구성하게되면 ? 파라미터값을 재활용0 할수 있음
         //실행
@@ -31,4 +27,31 @@ public class UserDao {
 
     }
 
+    private Connection getConnection() throws ClassNotFoundException, SQLException {
+        //driver 로딩
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        //connection
+        //query
+        return DriverManager.getConnection("jdbc:mysql://localhost/jeju?serverTimezone=Asia/Seoul", "jeju", "jejupw");
+    }
+
+    public void insert(User user) throws ClassNotFoundException, SQLException {
+        //mysql
+        //driver 로딩
+        Connection connection = getConnection();
+        //query
+        PreparedStatement preparedStatement=
+                connection.prepareStatement("insert into userinfo(name, password) values(?, ?)",Statement.RETURN_GENERATED_KEYS);
+        //실행
+        preparedStatement.setString(1,user.getName());
+        preparedStatement.setString(2,user.getPassword());
+        preparedStatement.executeUpdate();
+        ResultSet resultSet =preparedStatement.getGeneratedKeys();
+        resultSet.next();
+        user.setId(resultSet.getInt(1));
+        resultSet.close();
+        preparedStatement.close();
+        connection.close();
+
+    }
 }
