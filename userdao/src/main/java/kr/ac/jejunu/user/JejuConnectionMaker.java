@@ -4,14 +4,13 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class jejuUserDao extends UserDao {
+public class JejuConnectionMaker implements ConnectionMaker {
     @Override
     public Connection getConnection() throws ClassNotFoundException, SQLException {
+
         Class.forName("com.mysql.cj.jdbc.Driver");
         //connection
-
         return DriverManager.getConnection("jdbc:mysql://localhost/jeju?serverTimezone=Asia/Seoul", "jeju", "jejupw");
-
-
+        //추상화과정-abstract로 만들고 각각 따로
     }
 }
