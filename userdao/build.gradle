@@ -4,8 +4,8 @@ plugins {
 
 group 'kr.ac.jejunu'
 version '0.0.1-SNAPSHOT'
-sourceCompatibility = '12'
-targetCompatibility = '12'
+sourceCompatibility = '8'
+
 
 repositories {
     mavenCentral()
