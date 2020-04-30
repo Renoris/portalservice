@@ -1,16 +1,18 @@
 package kr.ac.jejunu.user;
+import javax.sql.DataSource;
+import javax.xml.crypto.Data;
 import java.sql.*;
 
 public class UserDao {
-    private final ConnectionMaker connectionMaker;
+    private final DataSource dataSource;
 
-    public UserDao(ConnectionMaker connectionMaker) {
-        this.connectionMaker = connectionMaker;
+    public UserDao(DataSource dataSource) {
+        this.dataSource = dataSource;
     }
 
     public User get(Integer id) throws ClassNotFoundException, SQLException {
         //mysql
-        Connection connection = connectionMaker.getConnection();
+        Connection connection = dataSource.getConnection();
         PreparedStatement preparedStatement =
                 connection.prepareStatement("select id , name, password from userinfo where id =? ");//statement와 preparestatement의 차이점 preparestatement로 구성하게되면 ? 파라미터값을 재활용0 할수 있음
         //실행
@@ -36,7 +38,7 @@ public class UserDao {
     public void insert(User user) throws ClassNotFoundException, SQLException {
         //mysql
         //driver 로딩
-        Connection connection = connectionMaker.getConnection();
+        Connection connection = dataSource.getConnection();
         //query
         PreparedStatement preparedStatement =
                 connection.prepareStatement("insert into userinfo(name, password) values(?, ?)", Statement.RETURN_GENERATED_KEYS);
