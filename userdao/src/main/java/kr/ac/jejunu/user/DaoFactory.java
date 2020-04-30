@@ -1,11 +1,16 @@
 package kr.ac.jejunu.user;
 
-public class DaoFactory {
-    public UserDao getUserDao() {
-        return new UserDao(getConnectionMaker());
-    }
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-    public JejuConnectionMaker getConnectionMaker() {
+@Configuration
+public class DaoFactory {
+    @Bean//spring이 new주는 instance
+    public UserDao getUserDao() {
+        return new UserDao(ConnectionMaker());
+    }
+    @Bean
+    public JejuConnectionMaker ConnectionMaker() {
         return new JejuConnectionMaker();
     }
 }
