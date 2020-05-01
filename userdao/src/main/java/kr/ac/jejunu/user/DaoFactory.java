@@ -5,8 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 
+
 import javax.sql.DataSource;
 import java.sql.Driver;
+
 
 @Configuration
 public class DaoFactory {
@@ -19,9 +21,8 @@ public class DaoFactory {
     @Value("${db.password}")
     private String password;
 
-
-    @Bean//spring이 new주는 instance
-    public UserDao getUserDao() {
+    @Bean
+    public UserDao userDao() {
         return new UserDao(dataSource());
     }
 
@@ -37,7 +38,5 @@ public class DaoFactory {
         dataSource.setUsername(username);
         dataSource.setPassword(password);
         return dataSource;
-
     }
 }
-
