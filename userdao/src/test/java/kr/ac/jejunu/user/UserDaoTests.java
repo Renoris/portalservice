@@ -55,8 +55,6 @@ public class UserDaoTests {
         user.setName(name);
         user.setPassword(password);
         userDao.insert(user);
-
-
         String updatedName="byungjun";
         user.setName(updatedName);
         String updatedPassword="1111";
