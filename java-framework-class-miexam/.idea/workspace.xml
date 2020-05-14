@@ -20,8 +20,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7665a297-5024-4d19-966f-212d58307744" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/kr.ac.jejunu.userdao.UserDaoTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/kr.ac.jejunu.userdao.UserDaoTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/kr.ac.jejunu.userdao.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/kr.ac.jejunu.userdao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-kr.ac.jejunu.userdao.UserDaoTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-kr.ac.jejunu.userdao.UserDaoTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/JdbcContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/JdbcContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/StatementStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/StatementStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kr/ac/jejunu/userdao/UserDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kr/ac/jejunu/userdao/UserDaoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/.idea/libraries/junit_platform_commons_1_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.idea/libraries/junit_platform_commons_1_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/build/reports/tests/test/classes/kr.ac.jejunu.user.UserDaoTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/build/reports/tests/test/classes/kr.ac.jejunu.user.UserDaoTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/build/reports/tests/test/packages/kr.ac.jejunu.user.html" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/build/reports/tests/test/packages/kr.ac.jejunu.user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/build/test-results/test/TEST-kr.ac.jejunu.user.UserDaoTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/build/test-results/test/TEST-kr.ac.jejunu.user.UserDaoTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/JdbcContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/JdbcContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/StatementStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/StatementStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/src/test/java/kr/ac/jejunu/user/UserDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/test/java/kr/ac/jejunu/user/UserDaoTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +169,7 @@
       <workItem from="1589420487040" duration="1947000" />
       <workItem from="1589422569944" duration="5191000" />
       <workItem from="1589434110910" duration="8604000" />
+      <workItem from="1589450418306" duration="686000" />
     </task>
     <servers />
   </component>
@@ -143,6 +189,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="342" y="361" key="#SQL_Dialects" timestamp="1589450675191">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="361" key="#SQL_Dialects/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589450675191" />
     <state x="423" y="350" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589437539040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -151,6 +201,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589443477909" />
+    <state x="742" y="352" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1589451068064">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="742" y="352" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589451068064" />
     <state x="401" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589437197825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -183,18 +237,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="594" y="298" width="732" height="479" key="RefactorJ.ExtractClass/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589444943962" />
-    <state x="775" y="454" key="ReplaceDuplicatesPrompt" timestamp="1589444524090">
+    <state x="775" y="454" key="ReplaceDuplicatesPrompt" timestamp="1589450787042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="775" y="454" key="ReplaceDuplicatesPrompt/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589444524090" />
+    <state x="775" y="454" key="ReplaceDuplicatesPrompt/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589450787042" />
     <state x="731" y="347" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589442340988">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="731" y="347" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589442340988" />
-    <state x="690" y="268" key="extract.method.dialog" timestamp="1589444684346">
+    <state x="690" y="268" key="extract.method.dialog" timestamp="1589450945757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="268" key="extract.method.dialog/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589444684346" />
+    <state x="690" y="268" key="extract.method.dialog/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589450945757" />
     <state x="752" y="265" key="refactoring.ChangeSignatureDialog" timestamp="1589444166145">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
