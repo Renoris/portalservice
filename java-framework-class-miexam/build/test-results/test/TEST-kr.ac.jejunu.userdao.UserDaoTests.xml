@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="kr.ac.jejunu.userdao.UserDaoTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-05-14T04:24:16" hostname="DESKTOP-7S5T5M0" time="0.434">
+<testsuite name="kr.ac.jejunu.userdao.UserDaoTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-05-14T05:14:30" hostname="DESKTOP-7S5T5M0" time="0.61">
   <properties/>
-  <testcase name="testGetHalla()" classname="kr.ac.jejunu.userdao.UserDaoTests" time="0.327"/>
-  <testcase name="testGet()" classname="kr.ac.jejunu.userdao.UserDaoTests" time="0.03"/>
-  <testcase name="insertuserHalla()" classname="kr.ac.jejunu.userdao.UserDaoTests" time="0.039"/>
-  <testcase name="insertuser()" classname="kr.ac.jejunu.userdao.UserDaoTests" time="0.035"/>
+  <testcase name="testGetHalla()" classname="kr.ac.jejunu.userdao.UserDaoTests" time="0.488"/>
+  <testcase name="testGet()" classname="kr.ac.jejunu.userdao.UserDaoTests" time="0.021"/>
+  <testcase name="insertuserHalla()" classname="kr.ac.jejunu.userdao.UserDaoTests" time="0.042"/>
+  <testcase name="insertuser()" classname="kr.ac.jejunu.userdao.UserDaoTests" time="0.056"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
