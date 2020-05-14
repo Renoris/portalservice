@@ -20,34 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7665a297-5024-4d19-966f-212d58307744" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/JdbcContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/kr/ac/jejunu/userdao/DeleteStatementStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/kr/ac/jejunu/userdao/DeleteStatementStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/kr/ac/jejunu/userdao/StatementStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/kr/ac/jejunu/userdao/StatementStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/kr/ac/jejunu/userdao/UpdateStatementStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/kr/ac/jejunu/userdao/UpdateStatementStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/kr/ac/jejunu/userdao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/kr/ac/jejunu/userdao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/kr.ac.jejunu.userdao.UserDaoTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/kr.ac.jejunu.userdao.UserDaoTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/kr.ac.jejunu.userdao.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/kr.ac.jejunu.userdao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-kr.ac.jejunu.userdao.UserDaoTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-kr.ac.jejunu.userdao.UserDaoTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/DeleteStatementStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/DeleteStatementStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/GetStatementStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/GetStatementStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/InsertStatemenntStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/InsertStatemenntStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/StatementStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/StatementStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/UpdateStatementStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/UpdateStatementStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/UserDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +123,7 @@
       <updated>1589420482917</updated>
       <workItem from="1589420487040" duration="1947000" />
       <workItem from="1589422569944" duration="5191000" />
-      <workItem from="1589434110910" duration="8173000" />
+      <workItem from="1589434110910" duration="8604000" />
     </task>
     <servers />
   </component>
