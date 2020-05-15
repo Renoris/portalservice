@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e01d89a8-bb98-43e5-87d8-4598194bcef2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/daoFactory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-framework-class-miexam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-framework-class-miexam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kr/ac/jejunu/user/UserDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kr/ac/jejunu/user/UserDaoTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +55,8 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -71,7 +76,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java-framework-class-miexam" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -132,6 +137,7 @@
       <workItem from="1588296376396" duration="36000" />
       <workItem from="1588329718445" duration="7957000" />
       <workItem from="1589420402287" duration="1812000" />
+      <workItem from="1589535140470" duration="2377000" />
     </task>
     <servers />
   </component>
@@ -151,10 +157,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1588283531653">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1589536149781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1588283531653" />
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589536149781" />
     <state x="373" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589421584271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -183,22 +189,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="658" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589420482888" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1588408571912">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1589537161285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1588408571912" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1588408571912">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589537161285" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1589537161285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1588408571912" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1588408571911">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589537161285" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1589537161285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1588408571911" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1588408571912">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589537161285" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1589537161285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1588408571912" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1589537161285" />
     <state x="663" y="298" width="593" height="442" key="RefactorJ.ExtractClass" timestamp="1588332683355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
