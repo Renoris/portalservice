@@ -26,8 +26,9 @@ public class UserDaoTests {
 
     @BeforeAll
     public static void setup(){
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext("kr.ac.jejunu.user");
 //        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("daoFactory.xml");
-        ApplicationContext applicationContext = new GenericGroovyApplicationContext("daoFactory.groovy");
+//        ApplicationContext applicationContext = new GenericGroovyApplicationContext("daoFactory.groovy");
         userDao = applicationContext.getBean("userDao",UserDao.class);
     }
 
