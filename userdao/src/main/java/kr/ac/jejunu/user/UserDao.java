@@ -20,6 +20,7 @@ public class UserDao {
 //        this.jdbcTemplate = jdbcTemplate;
 //    }
 
+
     //change
     public User get(Integer id) throws  SQLException {
         Object[] params = new Object[] {id};
@@ -27,7 +28,7 @@ public class UserDao {
         return jdbcTemplate.query(sql, params, rs -> {
             User user = null;
             if(rs.next()) {
-                user = new User();
+                user=new User();
                 user.setId(rs.getInt("id"));
                 user.setName(rs.getString("name"));
                 user.setPassword(rs.getString("password"));
