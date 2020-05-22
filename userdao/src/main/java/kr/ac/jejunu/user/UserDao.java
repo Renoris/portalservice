@@ -22,7 +22,7 @@ public class UserDao {
 
 
     //change
-    public User get(Integer id) throws  SQLException {
+    public User get(Integer id){
         Object[] params = new Object[] {id};
         String sql ="select id, name, password from userinfo where id = ? ";
         return jdbcTemplate.query(sql, params, rs -> {
@@ -37,7 +37,7 @@ public class UserDao {
         });
     }
 
-    public void insert(User user) throws  SQLException {
+    public void insert(User user){
         //mysql
         //driver 로딩
         Object[] params = new Object[] {user.getName(), user.getPassword()};
@@ -52,13 +52,13 @@ public class UserDao {
         },keyHolder);
         user.setId(keyHolder.getKey().intValue());
     }
-    public void update(User user) throws SQLException {
+    public void update(User user){
         String sql = "update userinfo set name = ?, password = ? where id =?";
         Object[] params = new Object[] {user.getName(), user.getPassword(), user.getId()};
         jdbcTemplate.update(sql, params);
     }
 
-    public void delete(Integer id) throws SQLException {
+    public void delete(Integer id){
         String sql = "delete from userinfo where id = ?";
         Object[] params = new Object[] {id};
         jdbcTemplate.update(sql, params);
