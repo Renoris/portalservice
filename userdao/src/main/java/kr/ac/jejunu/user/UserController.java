@@ -2,12 +2,11 @@ package kr.ac.jejunu.user;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.View;
+import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.*;
@@ -18,9 +17,9 @@ import java.io.*;
 public class UserController {
     private final UserDao userDao;
 
-    @RequestMapping("/user")
-    public User getUser(@RequestParam("id") Integer id){
-        return userDao.get(id);
+    @RequestMapping(path= "/user/")
+    public View getUser(@RequestParam("id") Integer id){
+        return new RedirectView("/upload");
     }
 
     @RequestMapping("/exception")
@@ -28,13 +27,14 @@ public class UserController {
         throw new RuntimeException("어이쿠!");
     }
 
-    @RequestMapping(path = "/upload", method= RequestMethod.GET)
+    @GetMapping("/upload")
     public void upload(){
 
     }
-    @RequestMapping(path = "/upload", method = RequestMethod.POST)
+
+    @PostMapping("/upload")
     public ModelAndView upload(@RequestParam("file")MultipartFile file, HttpServletRequest request) throws IOException {
-        File path = new File(request.getServletContext().getRealPath("/")+"/WEB-INF/static"+file.getOriginalFilename());
+        File path = new File(request.getServletContext().getRealPath("/")+"/WEB-INF/static/"+file.getOriginalFilename());
         FileOutputStream fileOutputStream = new FileOutputStream(path);
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
         bufferedOutputStream.write(file.getBytes());
