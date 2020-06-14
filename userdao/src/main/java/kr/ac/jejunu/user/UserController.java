@@ -12,12 +12,11 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.*;
 
 @Controller
-@RequestMapping
 @RequiredArgsConstructor
 public class UserController {
     private final UserDao userDao;
 
-    @RequestMapping(path= "/user/")
+    @RequestMapping(path = "/user")
     public User getUser(@RequestParam("id") Integer id){
         return userDao.get(id);
     }
@@ -27,12 +26,11 @@ public class UserController {
         throw new RuntimeException("어이쿠!");
     }
 
-    @GetMapping("/upload")
+    @RequestMapping(path = "/upload", method= RequestMethod.GET)
     public void upload(){
 
     }
-
-    @PostMapping("/upload")
+    @RequestMapping(path = "/upload", method = RequestMethod.POST)
     public ModelAndView upload(@RequestParam("file")MultipartFile file, HttpServletRequest request) throws IOException {
         File path = new File(request.getServletContext().getRealPath("/")+"/WEB-INF/static/"+file.getOriginalFilename());
         FileOutputStream fileOutputStream = new FileOutputStream(path);

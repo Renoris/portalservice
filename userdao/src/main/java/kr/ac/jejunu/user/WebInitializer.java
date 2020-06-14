@@ -12,8 +12,8 @@ import javax.servlet.ServletRegistration;
 public class WebInitializer implements WebApplicationInitializer {
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
-        AnnotationConfigWebApplicationContext applicationContext=new AnnotationConfigWebApplicationContext();
-        applicationContext.setNamespace("dispatcher-servlet");
+        AnnotationConfigWebApplicationContext applicationContext= new AnnotationConfigWebApplicationContext();
+        applicationContext.scan("kr.ac.jejunu.user");
         ServletRegistration.Dynamic servletRegistration= servletContext.addServlet("dispatcher",new DispatcherServlet(applicationContext));
         servletRegistration.setLoadOnStartup(1);
         servletRegistration.addMapping("/");
