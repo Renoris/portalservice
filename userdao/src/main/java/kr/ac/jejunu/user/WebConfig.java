@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.xml.MappingJackson2XmlView;
 import java.util.List;
 
 @Configuration
-@EnableWebMvc
+@EnableWebMvc//anotation-driven역할
 @ComponentScan("kr.ac.jejunu.user")
 public class WebConfig implements WebMvcConfigurer {
     @Override
@@ -32,7 +32,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/image/**").addResourceLocations("/WEB-INF/static");
+        registry.addResourceHandler("/images/**").addResourceLocations("/WEB-INF/static/");
     }
 
     @Override

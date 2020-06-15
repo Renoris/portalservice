@@ -15,6 +15,7 @@ public class UserFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         System.out.println("*****************filter before******************");
+        request.setCharacterEncoding("UTF-8");//한글깨짐방지
         chain.doFilter(request,response);
         System.out.println("*****************filter after******************");
     }

@@ -26,20 +26,21 @@ public class UserController {
         throw new RuntimeException("어이쿠!");
     }
 
-    @RequestMapping(path = "/upload", method= RequestMethod.GET)
+    @GetMapping("/upload")
     public void upload(){
 
     }
-    @RequestMapping(path = "/upload", method = RequestMethod.POST)
+
+    @PostMapping("/upload")
     public ModelAndView upload(@RequestParam("file")MultipartFile file, HttpServletRequest request) throws IOException {
         File path = new File(request.getServletContext().getRealPath("/")+"/WEB-INF/static/"+file.getOriginalFilename());
         FileOutputStream fileOutputStream = new FileOutputStream(path);
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
         bufferedOutputStream.write(file.getBytes());
-        bufferedOutputStream.close();
+        bufferedOutputStream.close();//여기까지 저장
 
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("url", "/images/"+ file.getOriginalFilename());
+        modelAndView.addObject("url", "/images/"+ file.getOriginalFilename());//여기는 보여주는건가
         return modelAndView;
     }
 

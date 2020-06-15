@@ -13,7 +13,7 @@
 
 <body>
 <h1>
-    Hello <%=user.getName()%>!!!!
+    Hello <%=user.getName()%>!!!! outuser.jsp
 </h1>
 </body>
 </html>
