@@ -20,6 +20,7 @@ ext {
 }
 
 dependencies {
+    compile 'jstl:jstl:1.2'
     implementation 'javax.servlet:javax.servlet-api:4.0.1'
     implementation 'org.codehaus.groovy:groovy:3.0.3'
     implementation "org.springframework:spring-core:${springVersion}"
