@@ -6,7 +6,8 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class UserInterceptor implements HandlerInterceptor {
+
+public class UserInterceptor implements HandlerInterceptor { //servelt에서 핸들러로 가기전에 처리
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         System.out.println("****** interceptor prehandle **************");

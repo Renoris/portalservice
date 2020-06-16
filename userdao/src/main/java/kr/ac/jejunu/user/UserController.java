@@ -2,6 +2,7 @@ package kr.ac.jejunu.user;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
@@ -10,6 +11,7 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.*;
+import java.util.ArrayList;
 
 @Controller
 @RequiredArgsConstructor
@@ -20,6 +22,12 @@ public class UserController {
     public User getUser(@RequestParam("id") Integer id){
         return userDao.get(id);
     }
+
+    @RequestMapping(path = "/userall")
+    public void getUserALL(Model model){
+        model.addAttribute(userDao.getUserAll());
+    }
+
 
     @RequestMapping("/exception")
     public void exception(){

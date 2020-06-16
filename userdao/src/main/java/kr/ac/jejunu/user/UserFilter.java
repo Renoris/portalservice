@@ -6,7 +6,7 @@ import java.io.IOException;
 
 
 @WebFilter(urlPatterns = "*")
-public class UserFilter implements Filter {
+public class UserFilter implements Filter { //서블릿 앞단에서 처리
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         System.out.println("*****************filter init******************");

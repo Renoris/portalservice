@@ -8,6 +8,7 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 
 @Component
@@ -37,6 +38,16 @@ public class UserDao {
         });
     }
 
+    public ArrayList<User> getUserAll(){
+        ArrayList<User> userList=new ArrayList<>();
+        for(int i =1; i<50; i++){
+            User user=null;
+            if(!(get(i)==null)){
+                userList.add(user);
+            }
+        }
+        return userList;
+    }
     public void insert(User user){
         //mysql
         //driver 로딩
