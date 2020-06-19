@@ -33,8 +33,13 @@ dependencies {
     testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.5.2")
     compileOnly 'org.projectlombok:lombok:1.18.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+
     testCompileOnly 'org.projectlombok:lombok:1.18.12'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.11.0'
     implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.11.0'
+
+    implementation 'org.springframework.data:spring-data-jpa:2.3.1.RELEASE'
+    implementation 'org.hibernate:hibernate-entitymanager:5.4.17.Final'
 }

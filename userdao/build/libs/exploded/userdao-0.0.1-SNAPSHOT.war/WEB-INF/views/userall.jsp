@@ -7,8 +7,7 @@
     <%
         String alist = "";
         ArrayList<User> userlist = (ArrayList<User>) request.getAttribute("userList");
-
-        for (User user : userlist) {
+        for (User user : userlist) { //foreach 문
             alist += "hello";
             alist += user.getName() + "<br>";
         }

@@ -12,7 +12,7 @@ public class SimpleController implements Controller {
     private final UserDao userDao;
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        User user = userDao.get(Integer.valueOf(request.getParameter("id")));
+        User user = userDao.findById(Integer.valueOf(request.getParameter("id"))).get(); //42분쯤
         ModelAndView modelAndView = new ModelAndView("user");
         modelAndView.addObject("user",user);
         return modelAndView;
