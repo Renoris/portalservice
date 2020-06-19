@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 @Component
 public class UserDao {
-    
+
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
@@ -21,38 +21,46 @@ public class UserDao {
 //        this.jdbcTemplate = jdbcTemplate;
 //    }
 
-
     //change
-    public User get(Integer id){
-        Object[] params = new Object[] {id};
-        String sql ="select id, name, password from userinfo where id = ? ";
+    public User get(Integer id) {
+        Object[] params = new Object[]{id};
+        String sql = "select id, name, password from userinfo where id = ? ";
         return jdbcTemplate.query(sql, params, rs -> {
             User user = null;
-            if(rs.next()) {
-                user=new User();
+            if (rs.next()) {
+                user = new User();
                 user.setId(rs.getInt("id"));
                 user.setName(rs.getString("name"));
                 user.setPassword(rs.getString("password"));
+                System.out.println(user.toString());
             }
             return user;
         });
     }
 
-    public ArrayList<User> getUserAll(){
-        ArrayList<User> userList=new ArrayList<>();
-        for(int i =1; i<50; i++){
-            User user=null;
-            if(!(get(i)==null)){
+    public ArrayList<User> getUserAll() {
+        ArrayList<User> userList = new ArrayList<>();
+        Object[] params = new Object[]{};
+        String sql = "select id, name, password from userinfo";
+        return jdbcTemplate.query(sql, params, rs -> {
+            User user = null;
+            while (rs.next()) {
+                user = new User();
+                user.setId(rs.getInt("id"));
+                user.setName(rs.getString("name"));
+                user.setPassword(rs.getString("password"));
                 userList.add(user);
             }
-        }
-        return userList;
+
+            return userList;
+        });
     }
-    public void insert(User user){
+
+    public void insert(User user) {
         //mysql
         //driver 로딩
-        Object[] params = new Object[] {user.getName(), user.getPassword()};
-        String sql ="insert into userinfo (name, password) values(?,?)";
+        Object[] params = new Object[]{user.getName(), user.getPassword()};
+        String sql = "insert into userinfo (name, password) values(?,?)";
         KeyHolder keyHolder = new GeneratedKeyHolder();
         jdbcTemplate.update(con -> {
             PreparedStatement preparedStatement = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
@@ -60,18 +68,19 @@ public class UserDao {
                 preparedStatement.setObject(i + 1, params[i]);
             }
             return preparedStatement;
-        },keyHolder);
+        }, keyHolder);
         user.setId(keyHolder.getKey().intValue());
     }
-    public void update(User user){
+
+    public void update(User user) {
         String sql = "update userinfo set name = ?, password = ? where id =?";
-        Object[] params = new Object[] {user.getName(), user.getPassword(), user.getId()};
+        Object[] params = new Object[]{user.getName(), user.getPassword(), user.getId()};
         jdbcTemplate.update(sql, params);
     }
 
-    public void delete(Integer id){
+    public void delete(Integer id) {
         String sql = "delete from userinfo where id = ?";
-        Object[] params = new Object[] {id};
+        Object[] params = new Object[]{id};
         jdbcTemplate.update(sql, params);
     }
 

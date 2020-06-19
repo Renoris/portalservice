@@ -1,6 +1,7 @@
 package kr.ac.jejunu.user;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -23,11 +24,10 @@ public class UserController {
         return userDao.get(id);
     }
 
-    @RequestMapping(path = "/userall")
+    @GetMapping("/userall")
     public void getUserALL(Model model){
-        model.addAttribute(userDao.getUserAll());
+        model.addAttribute("userList", userDao.getUserAll());
     }
-
 
     @RequestMapping("/exception")
     public void exception(){
@@ -45,7 +45,7 @@ public class UserController {
     }
 
     @PostMapping("/upload")
-    public ModelAndView upload(@RequestParam("file")MultipartFile file, HttpServletRequest request) throws IOException {
+    public ModelAndView upload(@RequestParam("file") MultipartFile file, HttpServletRequest request) throws IOException {
         File path = new File(request.getServletContext().getRealPath("/")+"/WEB-INF/static/"+file.getOriginalFilename());
         FileOutputStream fileOutputStream = new FileOutputStream(path);
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);

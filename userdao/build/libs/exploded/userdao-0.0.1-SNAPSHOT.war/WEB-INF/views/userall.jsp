@@ -4,15 +4,14 @@
 <html>
 <body>
 <h1>
-    <%String alist="";
-    ArrayList<User> userlist=(ArrayList<User>) request.getAttribute("model");
+    <%
+        String alist = "";
+        ArrayList<User> userlist = (ArrayList<User>) request.getAttribute("userList");
 
-    for(int i=1; i<userlist.size(); i++){
-        alist+="hello";
-        if(!(userlist.get(i)==null)){
-            alist+=userlist.get(i).getName();
+        for (User user : userlist) {
+            alist += "hello";
+            alist += user.getName() + "<br>";
         }
-    }
     %>
     <%=alist%>!!!inneruser.jsp
 </h1>

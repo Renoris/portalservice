@@ -19,8 +19,8 @@ import static org.hamcrest.Matchers.nullValue;
 import static org.hamcrest.core.Is.is;
 
 public class UserDaoTests {
-    String name = "bj";
-    String password ="1234";
+    String name = "병준";
+    String password ="aaaa";
 
     private static UserDao userDao;
 

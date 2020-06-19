@@ -25,20 +25,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e01d89a8-bb98-43e5-87d8-4598194bcef2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userall.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/userall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/userall.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/kr/ac/jejunu/user/UserDaoTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/kr/ac/jejunu/user/UserDaoTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userall.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kr/ac/jejunu/user/UserDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kr/ac/jejunu/user/UserDaoTests.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,23 +61,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="userdao" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="userdao" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="userdao" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -118,27 +106,61 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="kr.ac.jejunu.user" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\static" />
+      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\views" />
       <recent name="C:\Users\celbe\OneDrive\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\views" />
       <recent name="C:\Users\celbe\OneDrive\Desktop\study\portalservicedevelop\portalservice\userdao\build\libs\exploded\userdao-0.0.1-SNAPSHOT.war\WEB-INF\views" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\static" />
-      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="kr.ac.jejunu.user" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle clean" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Tomcat Server.tomcat">
+    <configuration name="UserDaoTests.get" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
+      <module name="userdao.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kr.ac.jejunu.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kr.ac.jejunu.user" />
+      <option name="MAIN_CLASS_NAME" value="kr.ac.jejunu.user.UserDaoTests" />
+      <option name="METHOD_NAME" value="get" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LombokTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -323,10 +345,12 @@
       <item itemvalue="Gradle.LombokTests" />
       <item itemvalue="Gradle.userdao [clean]" />
       <item itemvalue="Tomcat Server.tomcat" />
+      <item itemvalue="Android JUnit.UserDaoTests.get" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.userdao [clean]" />
+        <item itemvalue="Android JUnit.UserDaoTests.get" />
         <item itemvalue="Gradle.LombokTests" />
       </list>
     </recent_temporary>
@@ -378,23 +402,30 @@
       <workItem from="1592248738150" duration="612000" />
       <workItem from="1592321151750" duration="2363000" />
       <workItem from="1592343729964" duration="7292000" />
+      <workItem from="1592355450887" duration="1713000" />
+      <workItem from="1592357201898" duration="104000" />
+      <workItem from="1592357363117" duration="608000" />
+      <workItem from="1592358255963" duration="156000" />
+      <workItem from="1592375445041" duration="235000" />
+      <workItem from="1592375758209" duration="4629000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
