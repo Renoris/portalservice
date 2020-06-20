@@ -25,7 +25,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e01d89a8-bb98-43e5-87d8-4598194bcef2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/final-project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/Gallery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/GameScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/Mydaily.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/RestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/out/production/classes/kr/ac/jejunu/user/RestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/RestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../userdao/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../디자인작업/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../디자인작업/dist/js/all_min._js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../디자인작업/dist/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../디자인작업/dist/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../디자인작업/dist/password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../디자인작업/dist/기본템플릿.html" beforeDir="false" afterPath="$PROJECT_DIR$/../디자인작업/dist/기본템플릿.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,17 +123,20 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\static" />
-      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="kr.ac.jejunu.user" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\views" />
       <recent name="C:\Users\celbe\OneDrive\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\views" />
       <recent name="C:\Users\celbe\OneDrive\Desktop\study\portalservicedevelop\portalservice\userdao\build\libs\exploded\userdao-0.0.1-SNAPSHOT.war\WEB-INF\views" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="kr.ac.jejunu.user" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\static" />
+      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -326,11 +353,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Android JUnit.UserDaoTests.get" />
       <item itemvalue="Gradle.UserDaoTests" />
       <item itemvalue="Gradle.LombokTests" />
       <item itemvalue="Gradle.userdao [clean]" />
       <item itemvalue="Tomcat Server.tomcat" />
-      <item itemvalue="Android JUnit.UserDaoTests.get" />
     </list>
     <recent_temporary>
       <list>
@@ -393,6 +420,8 @@
       <workItem from="1592358255963" duration="156000" />
       <workItem from="1592375445041" duration="235000" />
       <workItem from="1592375758209" duration="6160000" />
+      <workItem from="1592680402075" duration="246000" />
+      <workItem from="1592680690127" duration="2884000" />
     </task>
     <servers />
   </component>
