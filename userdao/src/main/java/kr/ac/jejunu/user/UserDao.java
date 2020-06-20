@@ -6,7 +6,6 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface UserDao extends JpaRepository<User, Integer> {
-    //@Query("select * User ")
-    public List findAllByName(String name);
+
 
 }

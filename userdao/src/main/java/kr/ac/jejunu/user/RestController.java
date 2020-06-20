@@ -5,7 +5,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @org.springframework.web.bind.annotation.RestController
-@Controller
 @RequestMapping("/rest")
 @RequiredArgsConstructor
 public class RestController {

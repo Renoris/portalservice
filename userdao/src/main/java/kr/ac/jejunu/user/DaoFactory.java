@@ -45,7 +45,7 @@ public class DaoFactory {
         JpaVendorAdapter jpaVendorAdapter=new HibernateJpaVendorAdapter();
         entityManagerFactoryBean.setJpaVendorAdapter(jpaVendorAdapter);
         Properties jpaProperties= new Properties();
-        jpaProperties.setProperty("hibernate.dialect","org.hibernate.dialect.MySQLDialect");//오라클이나 mysql이나 페이징쿼리가 다르게때문에 각 벤더(mysql, oracle)에맞게 sql을 바꿔주는 것
+        jpaProperties.setProperty("hibernate.dialect","org.hibernate.dialect.MySQLDialect");
         entityManagerFactoryBean.setJpaProperties(jpaProperties);
         return entityManagerFactoryBean;
     }

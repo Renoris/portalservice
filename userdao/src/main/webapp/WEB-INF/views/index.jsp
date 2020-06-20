@@ -89,19 +89,25 @@
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                 <tr>
-                                    <th style="width: 25%">제목</th>
-                                    <th style="width: 40%">내용 </th>
-                                    <th style="width: 20%">작성자</th>
-                                    <th style="width: 15%">게시물보기</th>
+                                    <th style="width: 60%; text-align: center;">게시글</th>
+                                    <th style="width: 20%;">작성자</th>
+                                    <th style="width: 20%;">작성일</th>
                                 </tr>
                                 </thead>
-
                                 <tbody>
                                 <tr>
-                                    <th style="width: 25%">제목</th>
-                                    <th style="width: 40%">내용 </th>
-                                    <th style="width: 20%">작성자</th>
-                                    <th style="width: 15%"><a href="게시글데이터베이스인덱스">이동</a></th>
+                                    <th style="width: 60%; text-align: center;">
+                                        <a href="갤러리 넘버로 가는거">게시글</a>
+                                    </th>
+                                    <th style="width: 20%;">작성자</th>
+                                    <th style="width: 20%;">작성일</th>
+                                </tr>
+                                <tr>
+                                    <th style="width: 60%; text-align: center;">
+                                        <a href="갤러리 넘버로 가는거">게시글</a>
+                                    </th>
+                                    <th style="width: 20%;">작성자</th>
+                                    <th style="width: 20%;">작성일</th>
                                 </tr>
 
                                 </tbody>
@@ -129,6 +135,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+<script src="/resources/assets/demo/datatables-demo.js"></script>
 </body>
 
 </html>
