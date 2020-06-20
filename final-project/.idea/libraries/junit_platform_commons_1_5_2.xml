@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="junit-platform-commons-1.5.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/junit-platform-commons-1.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mysql-connector-java-8.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/hamcrest-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/junit-jupiter-api-5.5.2.jar!/" />
+      <root url="file://$PROJECT_DIR$/libs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/libs" recursive="false" />
+  </library>
+</component>
