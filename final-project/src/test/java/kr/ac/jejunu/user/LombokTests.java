@@ -1,5 +1,6 @@
 package kr.ac.jejunu.user;
 
+import kr.ac.jejunu.user.data.User;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;

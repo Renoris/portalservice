@@ -25,33 +25,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e01d89a8-bb98-43e5-87d8-4598194bcef2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/final-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/Gallery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/GameScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/Mydaily.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../userdao/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../userdao/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../userdao/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../userdao/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../userdao/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/RestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../userdao/out/production/classes/kr/ac/jejunu/user/RestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/RestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/java/kr/ac/jejunu/user/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../userdao/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../userdao/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../디자인작업/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../디자인작업/dist/js/all_min._js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../디자인작업/dist/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../디자인작업/dist/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../디자인작업/dist/password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../디자인작업/dist/기본템플릿.html" beforeDir="false" afterPath="$PROJECT_DIR$/../디자인작업/dist/기본템플릿.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/daoFactory.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/daoFactory.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/daoFactory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/daoFactory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/JdbcContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/RestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/SimpleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/StatementStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/userall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/userall.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/JdbcContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/RestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/SimpleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/StatementStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/daoFactory.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/daoFactory.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/daoFactory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/daoFactory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/data/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/Gallery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/data/Gallery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/GameScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/data/GameScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/JdbcContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/study/JdbcContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/Mydaily.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/data/Mydaily.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/RestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/SimpleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/SimpleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/StatementStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/study/StatementStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/data/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/data/UserAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/daoFactory.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/daoFactory.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/daoFactory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/daoFactory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userall.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kr/ac/jejunu/user/LombokTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kr/ac/jejunu/user/LombokTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/kr/ac/jejunu/user/UserDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kr/ac/jejunu/user/UserDaoTests.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,24 +164,12 @@
       <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Tomcat Server.tomcat">
-    <configuration name="UserDaoTests.get" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDaoTests.get" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="userdao.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kr.ac.jejunu.user.*" />
+          <option name="PATTERN" value="kr.ac.jejunu.user.data.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,6 +177,7 @@
       <option name="MAIN_CLASS_NAME" value="kr.ac.jejunu.user.UserDaoTests" />
       <option name="METHOD_NAME" value="get" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -422,24 +431,32 @@
       <workItem from="1592375758209" duration="6160000" />
       <workItem from="1592680402075" duration="246000" />
       <workItem from="1592680690127" duration="2884000" />
+      <workItem from="1592736238113" duration="948000" />
+      <workItem from="1592739644141" duration="3158000" />
+      <workItem from="1592758733485" duration="477000" />
+      <workItem from="1592759400724" duration="463000" />
+      <workItem from="1592760469085" duration="83000" />
+      <workItem from="1592760569902" duration="5000" />
+      <workItem from="1592760597733" duration="350000" />
+      <workItem from="1592761034562" duration="250000" />
+      <workItem from="1592761349183" duration="620000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -461,10 +478,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="696" y="421" key="#Tomcat_Server/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1590122478465" />
-    <state x="512" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592245728946">
+    <state x="512" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592761092185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="512" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592245728946" />
+    <state x="512" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592761092185" />
     <state x="686" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588277522634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -497,54 +514,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="658" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592218328731" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1592351122572">
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1592761370269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592351122572" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1592351122572">
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592761370269" />
+    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1592761370269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592351122572" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1592351122572">
+    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592761370269" />
+    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1592761370268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592351122572" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1592351122572">
+    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592761370268" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1592761370269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592351122572" />
-    <state width="1293" height="282" key="GridCell.Tab.1.bottom" timestamp="1592351122572">
+    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592761370269" />
+    <state width="1293" height="282" key="GridCell.Tab.1.bottom" timestamp="1592761370269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592351122572" />
-    <state width="1293" height="282" key="GridCell.Tab.1.center" timestamp="1592351122572">
+    <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592761370269" />
+    <state width="1293" height="282" key="GridCell.Tab.1.center" timestamp="1592761370269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592351122572" />
-    <state width="1293" height="282" key="GridCell.Tab.1.left" timestamp="1592351122572">
+    <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592761370269" />
+    <state width="1293" height="282" key="GridCell.Tab.1.left" timestamp="1592761370269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592351122572" />
-    <state width="1293" height="282" key="GridCell.Tab.1.right" timestamp="1592351122572">
+    <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592761370269" />
+    <state width="1293" height="282" key="GridCell.Tab.1.right" timestamp="1592761370269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592351122572" />
-    <state width="1293" height="282" key="GridCell.Tab.2.bottom" timestamp="1592351122573">
+    <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592761370269" />
+    <state width="1293" height="282" key="GridCell.Tab.2.bottom" timestamp="1592761370270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592351122573" />
-    <state width="1293" height="282" key="GridCell.Tab.2.center" timestamp="1592351122573">
+    <state width="1293" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592761370270" />
+    <state width="1293" height="282" key="GridCell.Tab.2.center" timestamp="1592761370269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.2.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592351122573" />
-    <state width="1293" height="282" key="GridCell.Tab.2.left" timestamp="1592351122573">
+    <state width="1293" height="282" key="GridCell.Tab.2.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592761370269" />
+    <state width="1293" height="282" key="GridCell.Tab.2.left" timestamp="1592761370269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.2.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592351122573" />
-    <state width="1293" height="282" key="GridCell.Tab.2.right" timestamp="1592351122573">
+    <state width="1293" height="282" key="GridCell.Tab.2.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592761370269" />
+    <state width="1293" height="282" key="GridCell.Tab.2.right" timestamp="1592761370269">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.2.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592351122573" />
+    <state width="1293" height="282" key="GridCell.Tab.2.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592761370269" />
+    <state width="1293" height="282" key="GridCell.Tab.3.bottom" timestamp="1592760790048">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592760790048" />
+    <state width="1293" height="282" key="GridCell.Tab.3.center" timestamp="1592760790048">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.3.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592760790048" />
+    <state width="1293" height="282" key="GridCell.Tab.3.left" timestamp="1592760790047">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.3.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592760790047" />
+    <state width="1293" height="282" key="GridCell.Tab.3.right" timestamp="1592760790048">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.3.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592760790048" />
     <state x="663" y="298" width="593" height="442" key="RefactorJ.ExtractClass" timestamp="1588332683355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

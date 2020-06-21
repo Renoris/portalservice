@@ -1,13 +1,12 @@
 package kr.ac.jejunu.user;
 
+import kr.ac.jejunu.user.dao.UserDao;
+import kr.ac.jejunu.user.data.User;
 import org.hamcrest.core.IsNull;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.GenericApplicationContext;
-import org.springframework.context.support.GenericGroovyApplicationContext;
 
 
 import java.sql.SQLException;

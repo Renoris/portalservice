@@ -1,5 +1,5 @@
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="kr.ac.jejunu.user.User" %>
+<%@ page import="kr.ac.jejunu.user.data.User" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <body>

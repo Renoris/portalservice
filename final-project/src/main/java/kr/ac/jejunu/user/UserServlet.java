@@ -1,5 +1,7 @@
 package kr.ac.jejunu.user;
 
+import kr.ac.jejunu.user.dao.UserDao;
+import kr.ac.jejunu.user.data.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
