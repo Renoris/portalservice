@@ -15,5 +15,5 @@ public class Mydaily {
     private String dailytitle;
     private String dailycontent;
     private String dailydate;
-
+    private boolean dateimportant;
 }
