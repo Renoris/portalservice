@@ -61,7 +61,7 @@
                                     </form>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <div class="small"><a href="--로그인페이지">로그인 페이지로</a></div>
+                                    <div class="small"><a href="/login">로그인 페이지로</a></div>
                                 </div>
                             </div>
                         </div>

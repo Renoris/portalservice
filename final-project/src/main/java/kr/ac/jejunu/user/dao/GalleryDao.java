@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 import java.sql.PreparedStatement;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 
@@ -34,7 +35,7 @@ public class GalleryDao {
                 gallery.setId(rs.getInt("id"));
                 gallery.setName(rs.getString("name"));
                 gallery.setPosttitle(rs.getString("posttitle"));
-                gallery.setPostdate(rs.getDate("posttitle"));
+                gallery.setPostdate(rs.getDate("postdate"));
             }
             return gallery;
         });
@@ -52,6 +53,12 @@ public class GalleryDao {
                 gallery.setName(rs.getString("name"));
                 gallery.setPosttitle(rs.getString("posttitle"));
                 gallery.setPostdate(rs.getDate("postdate"));
+                SimpleDateFormat format1=new SimpleDateFormat("MM-dd");
+                SimpleDateFormat format2=new SimpleDateFormat("HH:mm");
+                String datestring=format1.format(rs.getDate("postdate"));
+                String timestring=format2.format(rs.getTime("postdate"));
+                String datetime=datestring+" "+timestring;
+                gallery.setOutdate(datetime);
                 galleryList.add(gallery);
             }
             return galleryList;

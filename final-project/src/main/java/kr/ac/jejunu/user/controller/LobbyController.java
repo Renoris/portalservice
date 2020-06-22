@@ -23,11 +23,6 @@ public class LobbyController {
         model.addAttribute("galleryList", galleryDao.getAll());
     }
 
-//    @PostMapping(path ="/lobby")
-//    public String InsertUserAccount(HttpServletRequest request){
-//
-//    }
-
 
 //    @ExceptionHandler(Exception.class)
 //    public ModelAndView error(Exception e){

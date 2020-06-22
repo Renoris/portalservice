@@ -17,4 +17,5 @@ public class Comment {
     private String name;
     private String comment;
     private Date commentdate;
+    private String oudate;
 }

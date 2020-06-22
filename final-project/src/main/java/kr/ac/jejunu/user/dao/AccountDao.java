@@ -24,9 +24,9 @@ public class AccountDao {
 //    }
 
     //change
-    public UserAccount get(String name) {
-        Object[] params = new Object[]{name};
-        String sql = "select id, name, password from useraccount where name = ? ";
+    public UserAccount get(String name, String password) {
+        Object[] params = new Object[]{name, password};
+        String sql = "select id, name, password from useraccount where name = ? and password = ? ";
         return jdbcTemplate.query(sql, params, rs -> {
             UserAccount userAccount = null;
             if (rs.next()) {

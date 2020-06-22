@@ -101,7 +101,7 @@
           <div class="card mb-4 card-margin">
             <div class="card-header">
               <div class="gallery-title">게시글 목록</div><Button class="btn btn-primary button1"
-                onclick="location.href='게시글작성페이지'">게시글 작성</Button>
+                onclick="location.href='/createpost'">게시글 작성</Button>
             </div>
             <div class="card-body">
 
@@ -123,7 +123,7 @@
                       gallerylist += "<th style=\"width: 70%; text-align: center;\">";
                       gallerylist += "<a href=\"/gallery?id="+gallery.getId()+"\">"+gallery.getPosttitle()+"</a>";
                       gallerylist += "<th style=\"width: 15%;\">"+gallery.getName()+"</th>";
-                      gallerylist += "<th style=\"width: 15%;\">"+gallery.getPostdate()+"</th>";
+                      gallerylist += "<th style=\"width: 15%;\">"+gallery.getOutdate()+"</th>";
                       gallerylist += "</tr>";
                     }
                   %>
@@ -152,6 +152,7 @@
       </footer>
     </div>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>

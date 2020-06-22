@@ -13,6 +13,16 @@
     crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
     crossorigin="anonymous"></script>
+<%--  <%--%>
+<%--    String msg=null;--%>
+<%--    try{--%>
+<%--      msg=request.getAttribute("msg").toString();--%>
+<%--      System.out.println(msg);--%>
+<%--    }--%>
+<%--    catch (Exception e){--%>
+<%--      msg="";--%>
+<%--    }--%>
+<%--  %>--%>
   <style>
     .title {
       width: 90%;
@@ -101,26 +111,26 @@
         <div class="container-fluid">
           <h1 class="mt-4">게시글</h1>
 
-          <form action="creategallery위치" method="POST">
+          <form method="POST">
             <div class="card mb-4 card-margin">
               <div class="card-header">
                 <div class="form-group">
                   <label for="posttitle">게시글 제목</label>
-                  <input type="text" class="form-control" id="posttitle">
+                  <input type="text" class="form-control" name="posttitle" id="posttitle">
                 </div>
               </div>
               <div class="card-body">
                 <div class="form-group">
                   <label for="postcontent">게시글 내용</label>
-                  <textarea class="form-control" rows="15" id="postcontent"></textarea>
+                  <textarea class="form-control" rows="15" name="postcontent" id="postcontent"></textarea>
                 </div>
               </div>
               <div class="card-footer">
                 <button type="submit" class="btn btn-primary">게시글 작성</button>
-
               </div>
             </div>
           </form>
+        </div>
       </main>
       <footer class="py-4 bg-light mt-auto">
         <div class="container-fluid">
@@ -132,7 +142,14 @@
     </div>
 
   </div>
+<%--  <script type="text/javascript">--%>
+<%--    var f= "<%=msg%>";--%>
+<%--    if(!(f=="")){--%>
+<%--      alert(f);--%>
+<%--    }--%>
 
+
+<%--  </script>--%>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
@@ -142,10 +159,7 @@
   <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
   <script>
-    function resize(obj) {
-      obj.style.height = "1px";
-      obj.style.height = (12 + obj.scrollHeight) + "px";
-    }
+
   </script>
 </body>
 
