@@ -26,30 +26,28 @@ public class LoginController {
     }
 
     @PostMapping(path ="/login")
-    public UserAccount Login(HttpServletRequest request, Model model, HttpServletResponse response, HttpSession session) throws IOException {
+    public Model Login(HttpServletRequest request, HttpServletResponse response, Model model, HttpSession session) throws IOException {
         String name = request.getParameter("name");
         System.out.println("name:"+name);
         String password = request.getParameter("password");
         System.out.println("password:"+password);
-        UserAccount userAccount=accountdao.get(name);
-        if(userAccount.getName().equals(null)){
+        try{
+            UserAccount userAccount=accountdao.get(name);
+            if(userAccount.getName().equals(name)&&userAccount.getPassword().equals(password)){
+                session.setAttribute("userAccount",userAccount);
+                model.addAttribute("msg", "로그인 성공");
+                response.sendRedirect("/lobby.html");
+                return model;
+            }
+            else {
+                model.addAttribute("msg", "로그인 정보가 맞지 않습니다");
+                return model;
+            }
+        }catch (Exception e){
+            model.addAttribute("msg", "로그인 정보가 맞지 않습니다");
+            return model;
+        }
 
-            model.addAttribute("msg", "로그인 정보가 맞지 않습니다");
-            model.addAttribute("url", "login.jsp");
-            response.sendRedirect("/login");
-            return userAccount;
-        }
-        if(userAccount.getName().equals(name)&&userAccount.getPassword().equals(password)){
-            session.setAttribute("userAccount",userAccount);
-            response.sendRedirect("/login");
-            return userAccount;
-        }
-        else{
-            model.addAttribute("msg", "로그인 정보가 맞지 않습니다");
-            model.addAttribute("url", "login.jsp");
-            response.sendRedirect("/login");
-            return userAccount;
-        }
     }
 
 
