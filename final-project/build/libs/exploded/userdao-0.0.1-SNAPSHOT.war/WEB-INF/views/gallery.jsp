@@ -1,4 +1,9 @@
+<%@ page import="kr.ac.jejunu.user.data.Comment" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="kr.ac.jejunu.user.data.Gallery" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+
 <html>
 
 <head>
@@ -125,56 +130,38 @@
       <main>
         <div class="container-fluid">
           <h1 class="mt-4">게시글</h1>
-
-
           <div class="card mb-4 card-margin">
-            <div class="card-header">
-              <div class="title">게시글 제목</div>
-              <div class="date">04-21 21:42</div>
-              <div class="creater">test</div>
-            </div>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nemo pariatur quisquam autem mollitia,
-                eos molestias deleniti? Velit earum, totam molestiae magni corporis, dolore dignissimos labore minima
-                quos expedita dicta.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima impedit sapiente mollitia dicta
-                nesciunt consequatur natus ipsam? Dolore asperiores aperiam a corrupti aliquid modi, tenetur id
-                quibusdam eligendi accusamus veritatis?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laborum provident reprehenderit
-                suscipit, ex dolorem nihil? Quaerat, architecto! Quibusdam sapiente voluptates vero rerum reprehenderit
-                omnis reiciendis ullam exercitationem provident placeat!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam distinctio optio, modi esse quasi
-                beatae ratione ex. Beatae officiis itaque modi dolores! Blanditiis, consequatur facere est esse
-                cupiditate illum?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nemo pariatur quisquam autem mollitia,
-                eos molestias deleniti? Velit earum, totam molestiae magni corporis, dolore dignissimos labore minima
-                quos expedita dicta.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima impedit sapiente mollitia dicta
-                nesciunt consequatur natus ipsam? Dolore asperiores aperiam a corrupti aliquid modi, tenetur id
-                quibusdam eligendi accusamus veritatis?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laborum provident reprehenderit
-                suscipit, ex dolorem nihil? Quaerat, architecto! Quibusdam sapiente voluptates vero rerum reprehenderit
-                omnis reiciendis ullam exercitationem provident placeat!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam distinctio optio, modi esse quasi
-                beatae ratione ex. Beatae officiis itaque modi dolores! Blanditiis, consequatur facere est esse
-                cupiditate illum?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nemo pariatur quisquam autem mollitia,
-                eos molestias deleniti? Velit earum, totam molestiae magni corporis, dolore dignissimos labore minima
-                quos expedita dicta.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima impedit sapiente mollitia dicta
-                nesciunt consequatur natus ipsam? Dolore asperiores aperiam a corrupti aliquid modi, tenetur id
-                quibusdam eligendi accusamus veritatis?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laborum provident reprehenderit
-                suscipit, ex dolorem nihil? Quaerat, architecto! Quibusdam sapiente voluptates vero rerum reprehenderit
-                omnis reiciendis ullam exercitationem provident placeat!
-
-              </p>
-            </div>
+            <%
+              String ingallery="";
+              Gallery post=(Gallery) request.getAttribute("gallery");
+              ingallery += "<div class=\"card-header\">";
+              ingallery += "<div class=\"title\">"+post.getPosttitle()+"</div>";
+              ingallery += "<div class=\"date\">04-21 21:42</div>";
+              ingallery += "<div class=\"creater\">test</div>";
+              ingallery += "</div>";
+              ingallery += "<div class=\"card-body\">";
+              ingallery += "<p>";
+              ingallery += post.getPostcontent();
+              ingallery += "</p>";
+              ingallery += "</div>";
+            %>
+            <%=ingallery%>
             <div class="card-footer">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <%
+                    String commentlist = "";
+                    ArrayList<Comment> commentArrayList = (ArrayList<Comment>) request.getAttribute("commentlist");
+                    for (Comment comment : commentArrayList ) {
+                      commentlist += "<tr>";
+                      commentlist += "<th style=\"width: 70%; text-align: center;\">"+comment.getComment()+"</th>";
+                      commentlist += "<th style=\"width: 15%;\">"+comment.getName()+"</th>";
+                      commentlist += "<th style=\"width: 15%; text-align: center;\">"+comment.getOutdate()+"</th>";
+                      commentlist += "</tr>";
+                    }
+                  %>
                   <tbody>
+                  <%=commentlist%>
                     <tr>
                       <th style="width: 70%;">
                         코멘트1
@@ -200,8 +187,8 @@
       </main>
       <footer class="py-4 bg-light mt-auto" style="position: fixed; width:90%; top:90%">
         <div class="container-fluid">
-          <form class="form-inline" action="/action_page.php" method="POST">
-            <input type="text" class="form-control mb-2 mr-sm-2" id="comment">
+          <form class="form-inline" method="POST">
+            <input type="text" class="form-control mb-2 mr-sm-2" name ="comment" id="comment">
             <button type="submit" class="btn btn-primary mb-2">댓글입력</button>
           </form>
 

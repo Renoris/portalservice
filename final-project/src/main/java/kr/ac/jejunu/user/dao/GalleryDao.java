@@ -34,6 +34,7 @@ public class GalleryDao {
                 gallery = new Gallery();
                 gallery.setId(rs.getInt("id"));
                 gallery.setName(rs.getString("name"));
+                gallery.setPostcontent(rs.getString("postcontent"));
                 gallery.setPosttitle(rs.getString("posttitle"));
                 gallery.setPostdate(rs.getDate("postdate"));
             }

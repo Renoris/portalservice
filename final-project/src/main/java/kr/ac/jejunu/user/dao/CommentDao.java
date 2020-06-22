@@ -1,6 +1,7 @@
 package kr.ac.jejunu.user.dao;
 
-import kr.ac.jejunu.user.data.User;
+import kr.ac.jejunu.user.data.Comment;
+import kr.ac.jejunu.user.data.Gallery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 import java.sql.PreparedStatement;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 
@@ -22,46 +24,58 @@ public class CommentDao {
 //        this.jdbcTemplate = jdbcTemplate;
 //    }
 
-    //change
-    public User get(Integer id) {
+    //use viewpost
+    public Comment get(Integer id) {
         Object[] params = new Object[]{id};
-        String sql = "select id, name, password from userinfo where id = ? ";
+        String sql = "select id, galleryid, name,comment ,commentdate from comment where id = ? ";
         return jdbcTemplate.query(sql, params, rs -> {
-            User user = null;
+            Comment comment = null;
             if (rs.next()) {
-                user = new User();
-                user.setId(rs.getInt("id"));
-                user.setName(rs.getString("name"));
-                user.setPassword(rs.getString("password"));
-                System.out.println(user.toString());
+                comment = new Comment();
+                comment.setId(rs.getInt("id"));
+                comment.setName(rs.getString("name"));
+                comment.setGalleryid(rs.getInt("galleryid"));
+                comment.setComment(rs.getString("comment"));
+                SimpleDateFormat format1=new SimpleDateFormat("MM-dd");
+                SimpleDateFormat format2=new SimpleDateFormat("HH:mm");
+                String datestring=format1.format(rs.getDate("commentdate"));
+                String timestring=format2.format(rs.getTime("commentdate"));
+                String datetime=datestring+" "+timestring;
+                comment.setOutdate(datetime);
             }
-            return user;
+            return comment;
         });
     }
-
-    public ArrayList<User> getUserAll() {
-        ArrayList<User> userList = new ArrayList<>();
+    //use lobby
+    public ArrayList<Comment> getAll() {
+        ArrayList<Comment> commentList = new ArrayList<>();
         Object[] params = new Object[]{};
-        String sql = "select id, name, password from userinfo";
+        String sql = "select id, galleryid, name,comment ,commentdate from comment";
         return jdbcTemplate.query(sql, params, rs -> {
-            User user = null;
+            Comment comment = null;
             while (rs.next()) {
-                user = new User();
-                user.setId(rs.getInt("id"));
-                user.setName(rs.getString("name"));
-                user.setPassword(rs.getString("password"));
-                userList.add(user);
+                comment = new Comment();
+                comment.setId(rs.getInt("id"));
+                comment.setName(rs.getString("name"));
+                comment.setGalleryid(rs.getInt("galleryid"));
+                comment.setComment(rs.getString("comment"));
+                SimpleDateFormat format1=new SimpleDateFormat("MM-dd");
+                SimpleDateFormat format2=new SimpleDateFormat("HH:mm");
+                String datestring=format1.format(rs.getDate("commentdate"));
+                String timestring=format2.format(rs.getTime("commentdate"));
+                String datetime=datestring+" "+timestring;
+                comment.setOutdate(datetime);
+                commentList.add(comment);
             }
-
-            return userList;
+            return commentList;
         });
     }
 
-    public void insert(User user) {
+    public void insert(Comment comment) {
         //mysql
         //driver 로딩
-        Object[] params = new Object[]{user.getName(), user.getPassword()};
-        String sql = "insert into userinfo (name, password) values(?,?)";
+        Object[] params = new Object[]{comment.getName(), comment.getGalleryid(),comment.getComment(),comment.getCommentdate()};
+        String sql = "Insert into comment(name, galleryid,comment,commentdate) values(?,?,?,?)";
         KeyHolder keyHolder = new GeneratedKeyHolder();
         jdbcTemplate.update(con -> {
             PreparedStatement preparedStatement = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
@@ -70,17 +84,11 @@ public class CommentDao {
             }
             return preparedStatement;
         }, keyHolder);
-        user.setId(keyHolder.getKey().intValue());
-    }
-
-    public void update(User user) {
-        String sql = "update userinfo set name = ?, password = ? where id =?";
-        Object[] params = new Object[]{user.getName(), user.getPassword(), user.getId()};
-        jdbcTemplate.update(sql, params);
+        comment.setId(keyHolder.getKey().intValue());
     }
 
     public void delete(Integer id) {
-        String sql = "delete from userinfo where id = ?";
+        String sql = "delete from comment where id = ?";
         Object[] params = new Object[]{id};
         jdbcTemplate.update(sql, params);
     }

@@ -22,14 +22,14 @@ import java.util.Date;
 @RequiredArgsConstructor
 public class CreatePostController {
     private final GalleryDao galleryDao;
-
+    private final AccountDao accountDao;
     @GetMapping(path ="/createpost")
-    public void start(){
+    public void postpage(HttpSession session) throws IOException {
 
     }
 
     @PostMapping(path ="/createpost")
-    public Model createPost(HttpServletRequest request, HttpServletResponse response, Model model, HttpSession session, @ModelAttribute Gallery gallery) throws IOException {
+    public Model createPost(HttpServletResponse response, Model model, HttpSession session, @ModelAttribute Gallery gallery) throws IOException {
         try{
             UserAccount userAccount=(UserAccount) session.getAttribute("userAccount");
             gallery.setName(userAccount.getName());

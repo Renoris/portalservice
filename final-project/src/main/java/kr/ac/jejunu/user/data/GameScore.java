@@ -16,5 +16,5 @@ public class GameScore {
     private String name;
     private Integer score;
     private Date date;
-    private String oudate;
+    private String outdate;
 }

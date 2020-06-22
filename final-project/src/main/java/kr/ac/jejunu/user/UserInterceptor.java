@@ -15,7 +15,24 @@ public class UserInterceptor implements HandlerInterceptor { //servlet에서 핸
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        return true;
+        String requestUrl = request.getRequestURL().toString();
+        HttpSession session = request.getSession();
+        if(requestUrl.contains("/login")){
+            return true;
+        }
+        else if (requestUrl.contains("/createaccount")){
+            return true;
+        }
+        else {
+            Object obj = session.getAttribute("userAccount");
+            if (obj == null) {
+                response.sendRedirect("/login");
+                return false; // 더이상 컨트롤러 요청으로 가지 않도록 false로 반환함
+            }
+            else{
+                return true;
+            }
+        }
     }
 
     @Override

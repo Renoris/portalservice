@@ -17,6 +17,6 @@ public class Mydaily {
     private String dailytitle;
     private String dailycontent;
     private Date dailydate;
-    private String oudate;
+    private String outdate;
     private boolean dateimportant;
 }
