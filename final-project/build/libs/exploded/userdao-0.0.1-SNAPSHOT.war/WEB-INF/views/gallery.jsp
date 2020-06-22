@@ -162,20 +162,7 @@
                   %>
                   <tbody>
                   <%=commentlist%>
-                    <tr>
-                      <th style="width: 70%;">
-                        코멘트1
-                      </th>
-                      <th style="width: 15%;">병준이</th>
-                      <th style="width: 15%; text-align: center;">06-10 13:55</th>
-                    </tr>
-                    <tr>
-                      <th style="width: 70%;">
-                        코멘트2
-                      </th>
-                      <th style="width: 15%;">병준이</th>
-                      <th style="width: 15%; text-align: center;">06-10 13:55</th>
-                    </tr>
+
                   </tbody>
                 </table>
               </div>

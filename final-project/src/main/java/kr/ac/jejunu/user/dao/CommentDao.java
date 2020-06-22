@@ -47,10 +47,10 @@ public class CommentDao {
         });
     }
     //use lobby
-    public ArrayList<Comment> getAll() {
+    public ArrayList<Comment> getAll(Integer id) {
         ArrayList<Comment> commentList = new ArrayList<>();
-        Object[] params = new Object[]{};
-        String sql = "select id, galleryid, name,comment ,commentdate from comment";
+        Object[] params = new Object[]{id};
+        String sql = "select id, galleryid, name,comment ,commentdate from comment Where galleryid= ? ORDER BY id DESC";
         return jdbcTemplate.query(sql, params, rs -> {
             Comment comment = null;
             while (rs.next()) {

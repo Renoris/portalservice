@@ -26,28 +26,21 @@ public class GalleryController {
     public Model viewpost(@RequestParam("id") Integer id, Model model, HttpSession session) throws IOException {
 
         Gallery gallery=galleryDao.get(id);
-        ArrayList<Comment> comments=commentDao.getAll();
+        ArrayList<Comment> comments=commentDao.getAll(id);
         model.addAttribute("commentlist",comments);
         model.addAttribute("gallery", gallery);
         return model;
     }
 
     @PostMapping(path ="/gallery")
-    public void createcomment(@RequestParam ("id") Integer id, HttpServletResponse response, HttpSession session, @ModelAttribute Comment comment) throws IOException {
-        try{
-            UserAccount userAccount=(UserAccount) session.getAttribute("userAccount");
-            UserAccount confirmAccount=accountDao.get(userAccount.getName(), userAccount.getPassword());
-            comment.setName(userAccount.getName());
-            if (confirmAccount== null) {
-                response.sendRedirect("/login.html");
-            }
-        }catch (Exception e){
-            response.sendRedirect("/login.html");
-        }
+    public String createcomment(@RequestParam Integer id, HttpSession session, @ModelAttribute Comment comment) throws IOException {
         comment.setCommentdate(new java.util.Date());
         comment.setGalleryid(id);
+        UserAccount userAccount=(UserAccount) session.getAttribute("userAccount");
+        comment.setName(userAccount.getName());
         commentDao.insert(comment);
-        response.sendRedirect("/viewpost/{id}");
+        System.out.println(id);
+        return "redirect:/gallery?id="+id;
     }
 
 
