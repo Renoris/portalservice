@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.sql.Date;
+
 @Data
 @Builder
 @NoArgsConstructor
@@ -14,6 +16,6 @@ public class Mydaily {
     private String name;
     private String dailytitle;
     private String dailycontent;
-    private String dailydate;
+    private Date dailydate;
     private boolean dateimportant;
 }

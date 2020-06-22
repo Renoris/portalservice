@@ -18,7 +18,6 @@
         var message = '${msg}';
         var returnUrl = '${url}';
         alert(mag);
-        document.location.href = url;
     </script>
         <style>
             .container {
@@ -50,8 +49,8 @@
                             <div class="card-body">
                                 <form method="POST">
                                     <div class="form-group">
-                                        <label class="small mb-1" for="id">Id</label>
-                                        <input class="form-control py-4" id="id" name="id" type="text" placeholder="Id를 입력해주세요" />
+                                        <label class="small mb-1" for="name">Id</label>
+                                        <input class="form-control py-4" id="name" name="name" type="text" placeholder="Id를 입력해주세요" />
                                     </div>
                                     <div class="form-group">
                                         <label class="small mb-1" for="password">Password</label>

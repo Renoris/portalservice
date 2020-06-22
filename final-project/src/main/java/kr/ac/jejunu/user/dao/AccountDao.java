@@ -40,6 +40,22 @@ public class AccountDao {
         });
     }
 
+    public UserAccount getmatch(Integer id) {
+        Object[] params = new Object[]{id};
+        String sql = "select id, name, password from useraccount where id = ? ";
+        return jdbcTemplate.query(sql, params, rs -> {
+            UserAccount userAccount = null;
+            if (rs.next()) {
+                userAccount = new UserAccount();
+                userAccount.setId(rs.getInt("id"));
+                userAccount.setName(rs.getString("name"));
+                userAccount.setPassword(rs.getString("password"));
+                System.out.println(userAccount.toString());
+            }
+            return userAccount;
+        });
+    }
+
     public ArrayList<UserAccount> getUserAll() { //관리자용
         ArrayList<UserAccount> userList = new ArrayList<>();
         Object[] params = new Object[]{};

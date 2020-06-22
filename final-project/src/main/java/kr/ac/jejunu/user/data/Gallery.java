@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.sql.Date;
+
 @Data
 @Builder
 @NoArgsConstructor
@@ -14,6 +16,6 @@ public class Gallery {
     private String name;
     private String posttitle;
     private String postcontent;
-    private String postdate;
+    private Date postdate;
 
 }
