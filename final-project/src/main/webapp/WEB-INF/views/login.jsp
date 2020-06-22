@@ -8,33 +8,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>bj-portal-login</title>
+    <title>BJ-PortalService</title>
 
     <link rel="stylesheet" type="text/css" href="/resources/css/styles.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
         crossorigin="anonymous"></script>
-    <style>
-        .container {
-            margin-top: 7%;
-            vertical-align: middle;
-        }
+    <script type="text/javascript">
+        var message = '${msg}';
+        var returnUrl = '${url}';
+        alert(mag);
+        document.location.href = url;
+    </script>
+        <style>
+            .container {
+                margin-top: 5%;
+                vertical-align: middle;
+            }
 
-        #layoutAuthentication_content {
-            background-color: #D9E5FF;
-        }
+            #layoutAuthentication_content {
+                background-color: #d9e5ff;
+            }
 
-        .btn-primary {
-            background-color: #D9E5FF;
-            border-color: #D9E5FF;
-        }
-    </style>
-</head>
+            .btn-primary {
+                background-color: #d9e5ff;
+                border-color: #d9e5ff;
+            }
+        </style>
+    </head>
 
-<body class="bg-primary">
+    <body class="bg-primary">
     <div id="layoutAuthentication">
         <div id="layoutAuthentication_content">
-
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-5">
@@ -43,21 +48,23 @@
                                 <h3 class="text-center font-weight-light my-4">Login</h3>
                             </div>
                             <div class="card-body">
-                                <form action="--메인페이지로" method="POST">
-                                    <div class="form-group"><label class="small mb-1" for="inputId">Id</label><input
-                                            class="form-control py-4" id="inputId" type="email"
-                                            placeholder="Id를 입력해주세요" />
+                                <form method="POST">
+                                    <div class="form-group">
+                                        <label class="small mb-1" for="id">Id</label>
+                                        <input class="form-control py-4" id="id" name="id" type="text" placeholder="Id를 입력해주세요" />
                                     </div>
-                                    <div class="form-group"><label class="small mb-1"
-                                            for="inputPassword">Password</label><input class="form-control py-4"
-                                            id="inputPassword" type="password" placeholder="패스워드를 입력해주세요" /></div>
+                                    <div class="form-group">
+                                        <label class="small mb-1" for="password">Password</label>
+                                        <input class="form-control py-4" name="password" id="password" type="password" placeholder="패스워드를 입력해주세요" />
+                                    </div>
 
                                     <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                        <a class="btn btn-primary btn-block" href="index.jsp">Login</a></div>
+                                       <button type="submit" class="btn btn-primary">로그인</button>
+                                    </div>
                                 </form>
                             </div>
                             <div class="card-footer text-center">
-                                <div class="small"><a href="--회원가입">회원 가입</a></div>
+                                <div class="small"><a href="/createaccount">회원 가입</a></div>
                             </div>
                         </div>
                     </div>

@@ -36,11 +36,6 @@ public class UserController {
         throw new RuntimeException("어이쿠!");
     }
 
-    @RequestMapping("/index")
-    public void lobby(){
-
-    }
-
     @GetMapping("/upload")
     public void upload(){
 

@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" type="text/css" href="/resources/css/styles.css">
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
         crossorigin="anonymous"></script>
     <style>
@@ -45,17 +46,18 @@
                                     <h3 class="text-center font-weight-light my-4">Create Account</h3>
                                 </div>
                                 <div class="card-body">
-                                    <form action="api위치" method="POST">
+                                    <form method="POST" id="userAccount">
                                         <div class="form-group">
-                                            <label class="small mb-1" for="inputID">ID</label><input
-                                                class="form-control py-4" id="inputID" type="text"
+                                            <label class="small mb-1" for="name">ID</label><input
+                                                class="form-control py-4" id="name" name="name" type="text"
                                                 placeholder="ID를 입력해주세요" /></div>
-                                        <div class="form-group"><label class="small mb-1"
-                                                for="inputPassword">Password</label><input class="form-control py-4"
-                                                id="inputPassword" type="password" placeholder="패스워드를 입력해주세요" /></div>
+                                        <div class="form-group">
+                                            <label class="small mb-1" for="password">Password</label>
+                                            <input class="form-control py-4" id="password" name="password" type="password" placeholder="패스워드를 입력해주세요" />
+                                        </div>
 
-                                        <div class="form-group mt-4 mb-0"><input class="btn btn-primary btn-block"
-                                                type="submit" value="계정 생성"></div>
+                                        <div class="form-group mt-4 mb-0">
+                                            <input class="btn btn-primary btn-block" type="submit" value="계정 생성"></div>
                                     </form>
                                 </div>
                                 <div class="card-footer text-center">
