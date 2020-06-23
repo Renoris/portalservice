@@ -61,6 +61,25 @@ public class MydailyController {
             return model;
         }
     }
+    @GetMapping(path="/deletemydaily")
+    public Model deletcomment(@RequestParam Integer id, HttpSession session,Model model){
+        try {
+            UserAccount userAccount = (UserAccount) session.getAttribute("userAccount");
+            Mydaily mydaily = mydailyDao.get(id);
+            if(mydaily.getName().equals(userAccount.getName())){
+                mydailyDao.delete(id);
+                model.addAttribute("msg", "정상적으로 삭제되었습니다.");
+                return model;
+            }
+            else{
+                model.addAttribute("msg", "당신은 일정 작성자가 아닙니다. 옳지 않은 요청을 보내지 마십시오");
+                return model;
+            }
+        } catch (Exception e) {
+            model.addAttribute("msg", "잘못된 시도입니다.");
+            return model;
+        }
+    }
 
 
 

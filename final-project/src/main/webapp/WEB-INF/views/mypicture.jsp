@@ -11,7 +11,7 @@
   <meta name="author" content="" />
   <title>BJ-PortalService</title>
   <link rel="stylesheet" type="text/css" href="/resources/css/styles.css">
-  <link rel="stylesheet" type="text/css" href="/resources/css/mydaily.css">
+  <link rel="stylesheet" type="text/css" href="/resources/css/mypicture.css">
   <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
     crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
@@ -97,7 +97,7 @@
     <div id="layoutSidenav_content">
       <main>
         <div class="bjcontainer">
-          <h1 class="mt-4 mb-4">나의 일정</h1>
+          <h1 class="mt-4 mb-4">사진관</h1>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createmydaily">
             일정 작성
           </button>
@@ -110,27 +110,20 @@
                   <!-- Modal Header -->
                   <div class="modal-header">
                     <div class="form-group" style="width: 100%;">
-                      <label for="dailytitle">일정 제목</label>
-                      <input type="text" class="form-control" id="dailytitle" name="dailytitle">
+                      <label for="picturetitle">사진 제목</label>
+                      <input type="text" class="form-control" id="picturetitle" name="picturetitle">
                     </div>
                   </div>
                   <!-- Modal body -->
                   <div class="modal-body">
                     <div class="form-group">
-                      <label for="dailycontent">일정 내용</label>
-                      <textarea class="form-control" rows="15" id="dailycontent" name="dailycontent"></textarea>
-                    </div>
-                    <div class="form-group">
-                      <label for="dailydate2">일정 시간</label>
-                      <div id="dailydate2">
-                        <input type="date" name="dailydate">
-                        <input type="time" name="dailytime">
-                      </div>
+                      <label for="pictureurl">나의 사진 파일</label>
+                      <input type="image" name="pictureurl" id="pictureurl">
                     </div>
                   </div>
                   <!-- Modal footer -->
                   <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">일정 생성</button>
+                    <button type="submit" class="btn btn-primary">사진 전시</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">취소</button>
                   </div>
                 </form>
@@ -144,7 +137,7 @@
           ArrayList<Mydaily> mydailyArrayList = (ArrayList<Mydaily>) request.getAttribute("mydailylist");
           for (Mydaily mydaily : mydailyArrayList) {
             dailylist += "<div class=\"card mb-4 card-margin\">";
-            dailylist += "<div class=\"card-header\"><div>"+mydaily.getDailytitle()+"</div><div class=\"delete\"><a href=\"deletemydaily?id="+mydaily.getId()+"\">삭제</a></div></div>";
+            dailylist += "<div class=\"card-header\"><div class=\"title\">"+mydaily.getDailytitle()+"</div><div class=\"delete\"><a href=\"deletemydaily?id="+mydaily.getId()+"\">삭제</a></div></div>";
             dailylist += "<div class=\"card-body\">"+mydaily.getDailycontent()+"</div>";
             dailylist += "<div class=\"card-footer\">"+mydaily.getOutdate()+"</div>";
             dailylist += "</div>";
