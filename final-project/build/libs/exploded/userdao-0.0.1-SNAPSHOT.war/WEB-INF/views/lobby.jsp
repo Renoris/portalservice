@@ -45,7 +45,7 @@
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
           <a class="dropdown-item" href="--update">정보수정</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="--로그인창">로그아웃</a>
+          <a class="dropdown-item" href="/logout">로그아웃</a>
         </div>
       </li>
     </ul>

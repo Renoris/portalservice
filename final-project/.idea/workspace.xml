@@ -25,25 +25,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e01d89a8-bb98-43e5-87d8-4598194bcef2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/MydailyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/LogoutController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/dao/MydailyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/dao/MydailyDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/data/Mydaily$MydailyBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/data/Mydaily$MydailyBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/data/Mydaily.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/data/Mydaily.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/createpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/createpost.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/lobby.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/lobby.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/mydaily.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/mydaily.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/dao/MydailyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/dao/MydailyDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/data/Mydaily$MydailyBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/data/Mydaily$MydailyBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/data/Mydaily.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/data/Mydaily.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/dao/MydailyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/dao/MydailyDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/data/Mydaily.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/data/Mydaily.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/createpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/createpost.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/gallery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/gallery.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lobby.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lobby.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mydaily.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mydaily.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../디자인작업/dist/mydaily.html" beforeDir="false" afterPath="$PROJECT_DIR$/../디자인작업/dist/mydaily.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,10 +121,8 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\final-project\src\main\webapp\WEB-INF\resources\css" />
-      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\static" />
-      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="kr.ac.jejunu.user" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\views" />
@@ -146,8 +134,10 @@
       <recent name="kr.ac.jejunu.user.dao" />
       <recent name="kr.ac.jejunu.user" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="kr.ac.jejunu.user" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\final-project\src\main\webapp\WEB-INF\resources\css" />
+      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\static" />
+      <recent name="C:\Users\celbe\Desktop\study\portalservicedevelop\portalservice\userdao\src\main\webapp\WEB-INF\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -438,7 +428,7 @@
       <workItem from="1592779702252" duration="37050000" />
       <workItem from="1592874187493" duration="7597000" />
       <workItem from="1592896735384" duration="44000" />
-      <workItem from="1592896797275" duration="2040000" />
+      <workItem from="1592896797275" duration="2521000" />
     </task>
     <servers />
   </component>
@@ -521,65 +511,65 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="658" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592778274665" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1592898628783">
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1592899319503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592898628783" />
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592899319503" />
     <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592862354451" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1592898628783">
+    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1592899319502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592898628783" />
+    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592899319502" />
     <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592862354451" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1592898628783">
+    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1592899319502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592898628783" />
+    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592899319502" />
     <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592862354450" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1592898628783">
+    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1592899319503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592898628783" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592899319503" />
     <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592862354451" />
-    <state width="1293" height="282" key="GridCell.Tab.1.bottom" timestamp="1592898628679">
+    <state width="1293" height="282" key="GridCell.Tab.1.bottom" timestamp="1592899319503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592898628679" />
+    <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592899319503" />
     <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592862354451" />
-    <state width="1293" height="282" key="GridCell.Tab.1.center" timestamp="1592898628678">
+    <state width="1293" height="282" key="GridCell.Tab.1.center" timestamp="1592899319503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592898628678" />
+    <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592899319503" />
     <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592862354451" />
-    <state width="1293" height="282" key="GridCell.Tab.1.left" timestamp="1592898628678">
+    <state width="1293" height="282" key="GridCell.Tab.1.left" timestamp="1592899319503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592898628678" />
+    <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592899319503" />
     <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592862354451" />
-    <state width="1293" height="282" key="GridCell.Tab.1.right" timestamp="1592898628679">
+    <state width="1293" height="282" key="GridCell.Tab.1.right" timestamp="1592899319503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592898628679" />
+    <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592899319503" />
     <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592862354451" />
-    <state width="1293" height="282" key="GridCell.Tab.2.bottom" timestamp="1592898628679">
+    <state width="1293" height="282" key="GridCell.Tab.2.bottom" timestamp="1592899319504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592898628679" />
+    <state width="1293" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592899319504" />
     <state width="1293" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592862354451" />
-    <state width="1293" height="282" key="GridCell.Tab.2.center" timestamp="1592898628679">
+    <state width="1293" height="282" key="GridCell.Tab.2.center" timestamp="1592899319504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.2.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592898628679" />
+    <state width="1293" height="282" key="GridCell.Tab.2.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592899319504" />
     <state width="1293" height="282" key="GridCell.Tab.2.center/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592862354451" />
-    <state width="1293" height="282" key="GridCell.Tab.2.left" timestamp="1592898628679">
+    <state width="1293" height="282" key="GridCell.Tab.2.left" timestamp="1592899319503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.2.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592898628679" />
+    <state width="1293" height="282" key="GridCell.Tab.2.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592899319503" />
     <state width="1293" height="282" key="GridCell.Tab.2.left/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592862354451" />
-    <state width="1293" height="282" key="GridCell.Tab.2.right" timestamp="1592898628679">
+    <state width="1293" height="282" key="GridCell.Tab.2.right" timestamp="1592899319504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.2.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592898628679" />
+    <state width="1293" height="282" key="GridCell.Tab.2.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592899319504" />
     <state width="1293" height="282" key="GridCell.Tab.2.right/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592862354451" />
     <state width="1293" height="282" key="GridCell.Tab.3.bottom" timestamp="1592760790048">
       <screen x="0" y="0" width="1920" height="1040" />
