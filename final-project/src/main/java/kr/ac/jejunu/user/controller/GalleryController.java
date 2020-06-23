@@ -44,14 +44,24 @@ public class GalleryController {
         return "redirect:/gallery?id="+id;
     }
 
-    @GetMapping(path="deletegallery")
+    @GetMapping(path="/deletegallery")
     public Model deletegallery(@RequestParam Integer id, HttpSession session,Model model){
         try {
             UserAccount userAccount = (UserAccount) session.getAttribute("userAccount");
+            System.out.println(id);
+            Gallery gallery = galleryDao.get(id);
+            System.out.println(gallery.getName());
+            System.out.println(userAccount.getName());
 
-
-            model.addAttribute("msg", "정상적으로 등록되었습니다.");
-            return model;
+            if(gallery.getName().equals(userAccount.getName())){
+                galleryDao.delete(id);
+                model.addAttribute("msg", "정상적으로 삭제되었습니다.");
+                return model;
+            }
+            else{
+                model.addAttribute("msg", "게시글 작성자가 아닙니다..");
+                return model;
+            }
         } catch (Exception e) {
             model.addAttribute("msg", "잘못된 시도입니다.");
             return model;

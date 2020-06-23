@@ -45,7 +45,7 @@ public class GalleryDao {
     public ArrayList<Gallery> getAll() {
         ArrayList<Gallery> galleryList = new ArrayList<>();
         Object[] params = new Object[]{};
-        String sql = "select id, name, posttitle, postdate from gallery ORDER BY postdate DESC";
+        String sql = "select id, name, posttitle, postdate from gallery";
         return jdbcTemplate.query(sql, params, rs -> {
             Gallery gallery = null;
             while (rs.next()) {
@@ -83,8 +83,8 @@ public class GalleryDao {
     }
 
     public void update(Gallery gallery) {
-        String sql = "update gallery set name = ?, posttitle = ? , postcontent = ? ,where id =?";
-        Object[] params = new Object[]{gallery.getName(), gallery.getPosttitle(), gallery.getPostcontent()};
+        String sql = "update gallery set posttitle = ? , postcontent = ? ,postdate = ? where id =?";
+        Object[] params = new Object[]{gallery.getPosttitle(), gallery.getPostdate()};
         jdbcTemplate.update(sql, params);
     }
 
