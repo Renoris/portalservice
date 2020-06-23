@@ -41,8 +41,6 @@ public class MydailyController {
         model.addAttribute("mydailylist",mydailies);
         return model;
     }
-
-
     @PostMapping(path ="/mydaily")
     public Model createmydaily(HttpServletRequest request,Model model, HttpServletResponse response, HttpSession session) throws IOException {
         try {
@@ -54,14 +52,19 @@ public class MydailyController {
             mydaily.setDailydate(request.getParameter("dailydate"));
             mydaily.setDailytime(request.getParameter("dailytime"));
             mydailyDao.insert(mydaily);
-            response.sendRedirect("/mydaily");
+            model.addAttribute("msg", "정상적으로 등록되었습니다.");
+            ArrayList<Mydaily> mydailies=mydailyDao.getMydailyAll(userAccount.getName());
+            model.addAttribute("mydailylist",mydailies);
             return model;
         } catch (Exception e) {
             model.addAttribute("msg", "잘못된 시도입니다.");
             return model;
         }
-
     }
+
+
+
+
 //    @ExceptionHandler(Exception.class)
 //    public ModelAndView error(Exception e){
 //        ModelAndView modelAndView=new ModelAndView("error");

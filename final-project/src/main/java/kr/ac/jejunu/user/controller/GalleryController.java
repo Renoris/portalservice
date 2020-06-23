@@ -5,6 +5,7 @@ import kr.ac.jejunu.user.dao.CommentDao;
 import kr.ac.jejunu.user.dao.GalleryDao;
 import kr.ac.jejunu.user.data.Comment;
 import kr.ac.jejunu.user.data.Gallery;
+import kr.ac.jejunu.user.data.Mydaily;
 import kr.ac.jejunu.user.data.UserAccount;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -43,6 +44,19 @@ public class GalleryController {
         return "redirect:/gallery?id="+id;
     }
 
+    @GetMapping(path="deletegallery")
+    public Model deletegallery(@RequestParam Integer id, HttpSession session,Model model){
+        try {
+            UserAccount userAccount = (UserAccount) session.getAttribute("userAccount");
+
+
+            model.addAttribute("msg", "정상적으로 등록되었습니다.");
+            return model;
+        } catch (Exception e) {
+            model.addAttribute("msg", "잘못된 시도입니다.");
+            return model;
+        }
+    }
 
 //    @ExceptionHandler(Exception.class)
 //    public ModelAndView error(Exception e){

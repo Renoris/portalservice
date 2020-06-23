@@ -1,5 +1,6 @@
 <%@ page import="kr.ac.jejunu.user.data.Mydaily" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="javax.xml.stream.Location" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 
@@ -140,13 +141,18 @@
         </div>
         <%
           String dailylist = "";
-          ArrayList<Mydaily> mydailyArrayList = (ArrayList<Mydaily>) request.getAttribute("mydailylist");
-          for (Mydaily mydaily : mydailyArrayList) {
-            dailylist += "<div class=\"card mb-4 card-margin\">";
-            dailylist += "<div class=\"card-header\">"+mydaily.getDailytitle()+"</div>";
-            dailylist += "<div class=\"card-body\">"+mydaily.getDailycontent()+"</div>";
-            dailylist += "<div class=\"card-footer\">"+mydaily.getOutdate()+"</div>";
-            dailylist += "</div>";
+          try {
+            ArrayList<Mydaily> mydailyArrayList = (ArrayList<Mydaily>) request.getAttribute("mydailylist");
+            for (Mydaily mydaily : mydailyArrayList) {
+              dailylist += "<div class=\"card mb-4 card-margin\">";
+              dailylist += "<div class=\"card-header\">"+mydaily.getDailytitle()+"</div>";
+              dailylist += "<div class=\"card-body\">"+mydaily.getDailycontent()+"</div>";
+              dailylist += "<div class=\"card-footer\">"+mydaily.getOutdate()+"</div>";
+              dailylist += "</div>";
+            }
+          }catch (Exception e){
+
+
           }
         %>
         <%=dailylist%>

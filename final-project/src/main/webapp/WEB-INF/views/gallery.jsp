@@ -98,7 +98,8 @@
               ingallery += "<div class=\"card-header\">";
               ingallery += "<div class=\"title\">"+post.getPosttitle()+"</div>";
               ingallery += "<div class=\"date\">04-21 21:42</div>";
-              ingallery += "<div class=\"creater\">test</div>";
+              ingallery += "<div class=\"creater\">"+post.getName()+"</div>";
+              ingallery += "<div class=\"delete\"><a href=\"/deletegallery?id="+post.getId()+"\">X</a></div>";
               ingallery += "</div>";
               ingallery += "<div class=\"card-body\">";
               ingallery += "<p>";
