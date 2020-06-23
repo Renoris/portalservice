@@ -111,14 +111,16 @@
             <div class="card-footer">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
                   <%
                     String commentlist = "";
                     ArrayList<Comment> commentArrayList = (ArrayList<Comment>) request.getAttribute("commentlist");
                     for (Comment comment : commentArrayList ) {
                       commentlist += "<tr>";
                       commentlist += "<th style=\"width: 70%; text-align: center;\">"+comment.getComment()+"</th>";
-                      commentlist += "<th style=\"width: 15%;\">"+comment.getName()+"</th>";
-                      commentlist += "<th style=\"width: 15%; text-align: center;\">"+comment.getOutdate()+"</th>";
+                      commentlist += "<th style=\"width: 13%;\">"+comment.getName()+"</th>";
+                      commentlist += "<th style=\"width: 13%; text-align: center;\">"+comment.getOutdate()+"</th>";
+                      commentlist += "<th style=\"width: 4%; text-align: center;\"><a href=\"/deletecomment?id="+comment.getId()+"\">X</a></th>";
                       commentlist += "</tr>";
                     }
                   %>

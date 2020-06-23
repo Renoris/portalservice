@@ -48,18 +48,34 @@ public class GalleryController {
     public Model deletegallery(@RequestParam Integer id, HttpSession session,Model model){
         try {
             UserAccount userAccount = (UserAccount) session.getAttribute("userAccount");
-            System.out.println(id);
             Gallery gallery = galleryDao.get(id);
-            System.out.println(gallery.getName());
-            System.out.println(userAccount.getName());
-
             if(gallery.getName().equals(userAccount.getName())){
                 galleryDao.delete(id);
                 model.addAttribute("msg", "정상적으로 삭제되었습니다.");
                 return model;
             }
             else{
-                model.addAttribute("msg", "게시글 작성자가 아닙니다..");
+                model.addAttribute("msg", "게시글 작성자가 아닙니다.");
+                return model;
+            }
+        } catch (Exception e) {
+            model.addAttribute("msg", "잘못된 시도입니다.");
+            return model;
+        }
+    }
+
+    @GetMapping(path="/deletecomment")
+    public Model deletcomment(@RequestParam Integer id, HttpSession session,Model model){
+        try {
+            UserAccount userAccount = (UserAccount) session.getAttribute("userAccount");
+            Comment comment = commentDao.get(id);
+            if(comment.getName().equals(userAccount.getName())){
+                commentDao.delete(id);
+                model.addAttribute("msg", "정상적으로 삭제되었습니다.");
+                return model;
+            }
+            else{
+                model.addAttribute("msg", "코멘트 작성자가 아닙니다.");
                 return model;
             }
         } catch (Exception e) {
