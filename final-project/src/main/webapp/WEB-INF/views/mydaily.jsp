@@ -1,3 +1,5 @@
+<%@ page import="kr.ac.jejunu.user.data.Mydaily" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 
@@ -14,15 +16,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
     crossorigin="anonymous"></script>
   <style>
-    .card {
-      margin-left: 20px;
-      margin-right: 20px;
+    .card {;
+      margin: 10px 20px 10px 20px;
       height: 300px;
       width: 27%;
       float: left;
     }
 
     .bjcontainer {
+      margin-bottom: 20px;
       width: 80%;
       height: 100px;
       margin-right: 20px;
@@ -120,19 +122,26 @@
           <div class="modal" id="createmydaily">
             <div class="modal-dialog">
               <div class="modal-content">
-                <form method="POST">
+                <form method="POST" action="/mydaily">
                   <!-- Modal Header -->
                   <div class="modal-header">
                     <div class="form-group" style="width: 100%;">
                       <label for="dailytitle">일정 제목</label>
-                      <input type="text" class="form-control" id="dailytitle">
+                      <input type="text" class="form-control" id="dailytitle" name="dailytitle">
                     </div>
                   </div>
                   <!-- Modal body -->
                   <div class="modal-body">
                     <div class="form-group">
                       <label for="dailycontent">일정 내용</label>
-                      <textarea class="form-control" rows="15" id="dailycontent"></textarea>
+                      <textarea class="form-control" rows="15" id="dailycontent" name="dailycontent"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="dailydate2">일정 시간</label>
+                      <div id="dailydate2">
+                        <input type="date" name="dailydate">
+                        <input type="time" name="dailytime">
+                      </div>
                     </div>
                   </div>
                   <!-- Modal footer -->
@@ -145,23 +154,19 @@
             </div>
           </div>
         </div>
-        <div class="card mb-4 card-margin">
-          <div class="card-header">Header</div>
-          <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi expedita quia hic
-            deleniti sunt odit reprehenderit facere impedit, dolorum a incidunt eum minus molestiae ipsum adipisci
-            quis consectetur? Distinctio, illum?</div>
-          <div class="card-footer">Footer</div>
-        </div>
-        <div class="card mb-4 card-margin">
-          <div class="card-header">Header</div>
-          <div class="card-body">Content</div>
-          <div class="card-footer">Footer</div>
-        </div>
-        <div class="card mb-4 card-margin">
-          <div class="card-header">Header</div>
-          <div class="card-body">Content</div>
-          <div class="card-footer">Footer</div>
-        </div>
+        <%
+          String dailylist = "";
+          ArrayList<Mydaily> mydailyArrayList = (ArrayList<Mydaily>) request.getAttribute("mydailylist");
+          for (Mydaily mydaily : mydailyArrayList) {
+            dailylist += "<div class=\"card mb-4 card-margin\">";
+            dailylist += "<div class=\"card-header\">"+mydaily.getDailytitle()+"</div>";
+            dailylist += "<div class=\"card-body\">"+mydaily.getDailycontent()+"</div>";
+            dailylist += "<div class=\"card-footer\">"+mydaily.getOutdate()+"</div>";
+            dailylist += "</div>";
+          }
+        %>
+        <%=dailylist%>
+
 
 
 

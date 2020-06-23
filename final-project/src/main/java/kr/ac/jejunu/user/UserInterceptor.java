@@ -23,6 +23,10 @@ public class UserInterceptor implements HandlerInterceptor { //servlet에서 핸
         else if (requestUrl.contains("/createaccount")){
             return true;
         }
+        else if (requestUrl.contains("/resources")){
+            return true;
+        }
+
         else {
             Object obj = session.getAttribute("userAccount");
             if (obj == null) {
