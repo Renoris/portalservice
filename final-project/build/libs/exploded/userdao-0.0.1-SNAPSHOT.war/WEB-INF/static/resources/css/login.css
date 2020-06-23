@@ -1,0 +1,14 @@
+@charset "UTF-8";
+.container {
+    margin-top: 5%;
+    vertical-align: middle;
+}
+
+.bg-bj{
+    background-color: #d9e5ff; !important;
+}
+
+.btn-primary {
+    background-color: #d9e5ff;
+    border-color: #d9e5ff;
+}

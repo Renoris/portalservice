@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.card {
+    margin: 10px 20px 10px 20px;
+    height: 400px;
+    width: 20%;
+    float: left;
+}
+
+.bjcontainer {
+    margin-bottom: 20px;
+    width: 80%;
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.card-header {
+    background-color: #DAD9FF;
+}
+
+.card-body {
+    background-color: #D4F4FA;
+    overFlow: auto;
+}
+
+.card-footer {
+    background-color: #FFD8D8;
+    text-align: center;
+}

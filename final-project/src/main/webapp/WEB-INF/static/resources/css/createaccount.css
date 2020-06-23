@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.container {
+    margin-top: 7%;
+    vertical-align: middle;
+}
+
+#layoutAuthentication_content {
+    background-color: #D9E5FF;
+
+}
+
+.btn-primary {
+    background-color: #D9E5FF;
+    border-color: #D9E5FF;
+}

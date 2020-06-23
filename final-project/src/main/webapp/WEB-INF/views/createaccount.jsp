@@ -12,28 +12,22 @@
     <title>bj-portal-createaccount</title>
 
     <link rel="stylesheet" type="text/css" href="/resources/css/styles.css">
-
+    <link rel="stylesheet" type="text/css" href="/resources/css/createaccount.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
         crossorigin="anonymous"></script>
-    <style>
-        .container {
-            margin-top: 7%;
-            vertical-align: middle;
-        }
 
-        #layoutAuthentication_content {
-            background-color: #D9E5FF;
-
-        }
-
-        .btn-primary {
-            background-color: #D9E5FF;
-            border-color: #D9E5FF;
-        }
-    </style>
 </head>
-
+<%
+    String msg=null;
+    try{
+        msg=request.getAttribute("msg").toString();
+        System.out.println(msg);
+    }
+    catch (Exception e){
+        msg="";
+    }
+%>
 <body class="bg-primary">
     <div id="layoutAuthentication">
         <div id="layoutAuthentication_content">
@@ -84,7 +78,14 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-    <script src="/resources/js/scripts.js"></script>
+    <script type="text/javascript">
+        var f= "<%=msg%>";
+        if(!(f=="")){
+            alert(f);
+        }
+
+
+    </script>
 
 </body>
 

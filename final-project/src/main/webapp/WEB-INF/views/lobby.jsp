@@ -15,18 +15,8 @@
     crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="/resources/css/lobby.css">
 
-  <style>
-    .button1 {
-      float: right;
-    }
-
-    .gallery-title {
-      float: left;
-      font-size: 23px;
-      text-align: center;
-    }
-  </style>
 </head>
 
 <body class="sb-nav-fixed">

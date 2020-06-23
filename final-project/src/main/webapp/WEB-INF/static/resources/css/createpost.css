@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.title {
+    width: 90%;
+}
+
+.btn-primary {
+    float: right;
+}
+
+textarea.autosize {
+    min-height: 50px;
+}
+
+.content {
+    width: 90%;
+}

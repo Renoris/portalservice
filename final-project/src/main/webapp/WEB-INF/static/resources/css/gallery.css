@@ -1,0 +1,39 @@
+@charset "UTF-8";
+.card-body {
+    height: 500px;
+    overFlow: auto;
+}
+.card-footer {
+    padding-top: 30px;
+}
+
+.table th {
+    padding: 0.5rem;
+}
+.form-inline .form-control {
+    display: inline-block;
+    width: 90%;
+    vertical-align: middle;
+}
+
+.emptycontainer {
+    width: 90%;
+    height: 100px;
+}
+
+.btn-primary {
+    width: 7%;
+}
+
+.title {
+    float: left;
+}
+
+.date {
+    float: right;
+}
+
+.creater {
+    margin-right: 20px;
+    float: right;
+}

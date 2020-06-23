@@ -11,39 +11,23 @@
   <meta name="author" content="" />
   <title>BJ-PortalService</title>
   <link rel="stylesheet" type="text/css" href="/resources/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/resources/css/mydaily.css">
   <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
     crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
     crossorigin="anonymous"></script>
-  <style>
-    .card {;
-      margin: 10px 20px 10px 20px;
-      height: 300px;
-      width: 27%;
-      float: left;
-    }
 
-    .bjcontainer {
-      margin-bottom: 20px;
-      width: 80%;
-      height: 100px;
-      margin-right: 20px;
-      margin-left: 20px;
+  <%
+    String msg=null;
+    try{
+      msg=request.getAttribute("msg").toString();
+      System.out.println(msg);
     }
+    catch (Exception e){
+      msg="";
+    }
+  %>
 
-    .card-header {
-      background-color: #DAD9FF;
-    }
-
-    .card-body {
-      background-color: #D4F4FA;
-      overFlow: auto;
-    }
-
-    .card-footer {
-      background-color: #FFD8D8;
-    }
-  </style>
 </head>
 
 <body class="sb-nav-fixed">
@@ -181,6 +165,14 @@
     </div>
 
   </div>
+  <script type="text/javascript">
+    var f= "<%=msg%>";
+    if(!(f=="")){
+      alert(f);
+    }
+
+
+  </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>

@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.Time;
@@ -43,19 +44,24 @@ public class MydailyController {
 
 
     @PostMapping(path ="/mydaily")
-    public String createmydaily(HttpServletRequest request, HttpSession session) throws IOException {
-        Mydaily mydaily=new Mydaily();
-        UserAccount userAccount=(UserAccount) session.getAttribute("userAccount");
-        mydaily.setName(userAccount.getName());
-        mydaily.setDailycontent(request.getParameter("dailycontent"));
-        mydaily.setDailytitle(request.getParameter("dailytitle"));
-        mydaily.setDailydate(request.getParameter("dailydate"));
-        mydaily.setDailytime(request.getParameter("dailytime"));
-        mydailyDao.insert(mydaily);
-        return "redirect:/mydaily";
+    public Model createmydaily(HttpServletRequest request,Model model, HttpServletResponse response, HttpSession session) throws IOException {
+        try {
+            Mydaily mydaily = new Mydaily();
+            UserAccount userAccount = (UserAccount) session.getAttribute("userAccount");
+            mydaily.setName(userAccount.getName());
+            mydaily.setDailycontent(request.getParameter("dailycontent"));
+            mydaily.setDailytitle(request.getParameter("dailytitle"));
+            mydaily.setDailydate(request.getParameter("dailydate"));
+            mydaily.setDailytime(request.getParameter("dailytime"));
+            mydailyDao.insert(mydaily);
+            response.sendRedirect("/mydaily");
+            return model;
+        } catch (Exception e) {
+            model.addAttribute("msg", "잘못된 시도입니다.");
+            return model;
+        }
+
     }
-
-
 //    @ExceptionHandler(Exception.class)
 //    public ModelAndView error(Exception e){
 //        ModelAndView modelAndView=new ModelAndView("error");

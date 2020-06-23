@@ -9,37 +9,22 @@
   <meta name="author" content="" />
   <title>BJ-PortalService</title>
   <link rel="stylesheet" type="text/css" href="/resources/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/resources/css/createpost.css">
   <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
     crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
     crossorigin="anonymous"></script>
-<%--  <%--%>
-<%--    String msg=null;--%>
-<%--    try{--%>
-<%--      msg=request.getAttribute("msg").toString();--%>
-<%--      System.out.println(msg);--%>
-<%--    }--%>
-<%--    catch (Exception e){--%>
-<%--      msg="";--%>
-<%--    }--%>
-<%--  %>--%>
-  <style>
-    .title {
-      width: 90%;
+  <%
+    String msg=null;
+    try{
+      msg=request.getAttribute("msg").toString();
+      System.out.println(msg);
     }
+    catch (Exception e){
+      msg="";
+    }
+  %>
 
-    .btn-primary {
-      float: right;
-    }
-
-    textarea.autosize {
-      min-height: 50px;
-    }
-
-    .content {
-      width: 90%;
-    }
-  </style>
 </head>
 
 <body class="sb-nav-fixed">
@@ -142,14 +127,15 @@
     </div>
 
   </div>
-<%--  <script type="text/javascript">--%>
-<%--    var f= "<%=msg%>";--%>
-<%--    if(!(f=="")){--%>
-<%--      alert(f);--%>
-<%--    }--%>
+
+  <script type="text/javascript">
+    var f= "<%=msg%>";
+    if(!(f=="")){
+      alert(f);
+    }
 
 
-<%--  </script>--%>
+  </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>

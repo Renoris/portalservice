@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.button1 {
+    float: right;
+}
+
+.gallery-title {
+    float: left;
+    font-size: 23px;
+    text-align: center;
+}

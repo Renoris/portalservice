@@ -20,29 +20,14 @@
     <title>BJ-PortalService</title>
 
     <link rel="stylesheet" type="text/css" href="/resources/css/styles.css">
-
+    <link rel="stylesheet" type="text/css" href="/resources/css/login.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
         crossorigin="anonymous"></script>
 
 
-        <style>
-            .container {
-                margin-top: 5%;
-                vertical-align: middle;
-            }
-
-            #layoutAuthentication_content {
-                background-color: #d9e5ff;
-            }
-
-            .btn-primary {
-                background-color: #d9e5ff;
-                border-color: #d9e5ff;
-            }
-        </style>
     </head>
 
-    <body class="bg-primary">
+    <body class="bg-bj">
     <div id="layoutAuthentication">
         <div id="layoutAuthentication_content">
             <div class="container">
