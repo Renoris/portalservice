@@ -41,18 +41,6 @@ public class UserController {
 
     }
 
-    @PostMapping("/upload")
-    public ModelAndView upload(@RequestParam("file") MultipartFile file, HttpServletRequest request) throws IOException {
-        File path = new File(request.getServletContext().getRealPath("/")+"/WEB-INF/static/"+file.getOriginalFilename());
-        FileOutputStream fileOutputStream = new FileOutputStream(path);
-        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
-        bufferedOutputStream.write(file.getBytes());
-        bufferedOutputStream.close();//여기까지 저장
-
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("url", "/images/"+ file.getOriginalFilename());//여기는 보여주는건가
-        return modelAndView;
-    }
 
     @ExceptionHandler(Exception.class)
     public ModelAndView error(Exception e){

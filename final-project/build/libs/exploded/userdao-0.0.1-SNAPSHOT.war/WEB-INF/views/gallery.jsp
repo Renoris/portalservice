@@ -80,6 +80,7 @@
               <nav class="sb-sidenav-menu-nested nav">
                 <a class="nav-link" href="/lobby">자유게시판</a>
                 <a class="nav-link" href="/mydaily">나의일정</a>
+                <a class="nav-link" href="/mypicture">사진관</a>
               </nav>
             </div>
 

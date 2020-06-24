@@ -42,15 +42,15 @@ public class MydailyController {
         return model;
     }
     @PostMapping(path ="/mydaily")
-    public Model createmydaily(HttpServletRequest request,Model model, HttpServletResponse response, HttpSession session) throws IOException {
+    public Model createmydaily(@ModelAttribute Mydaily mydaily,Model model, HttpServletResponse response, HttpSession session) throws IOException {
         try {
-            Mydaily mydaily = new Mydaily();
+//            Mydaily mydaily = new Mydaily();
             UserAccount userAccount = (UserAccount) session.getAttribute("userAccount");
             mydaily.setName(userAccount.getName());
-            mydaily.setDailycontent(request.getParameter("dailycontent"));
-            mydaily.setDailytitle(request.getParameter("dailytitle"));
-            mydaily.setDailydate(request.getParameter("dailydate"));
-            mydaily.setDailytime(request.getParameter("dailytime"));
+//            mydaily.setDailycontent(request.getParameter("dailycontent"));
+//            mydaily.setDailytitle(request.getParameter("dailytitle"));
+//            mydaily.setDailydate(request.getParameter("dailydate"));
+//            mydaily.setDailytime(request.getParameter("dailytime"));
             mydailyDao.insert(mydaily);
             model.addAttribute("msg", "정상적으로 등록되었습니다.");
             ArrayList<Mydaily> mydailies=mydailyDao.getMydailyAll(userAccount.getName());

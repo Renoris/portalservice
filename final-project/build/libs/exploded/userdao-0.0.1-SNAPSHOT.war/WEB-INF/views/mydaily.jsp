@@ -88,6 +88,7 @@
               <nav class="sb-sidenav-menu-nested nav">
                 <a class="nav-link" href="/lobby">자유게시판</a>
                 <a class="nav-link" href="/mydaily">나의일정</a>
+                <a class="nav-link" href="/mypicture">사진관</a>
               </nav>
             </div>
           </div>
@@ -144,7 +145,7 @@
           ArrayList<Mydaily> mydailyArrayList = (ArrayList<Mydaily>) request.getAttribute("mydailylist");
           for (Mydaily mydaily : mydailyArrayList) {
             dailylist += "<div class=\"card mb-4 card-margin\">";
-            dailylist += "<div class=\"card-header\"><div>"+mydaily.getDailytitle()+"</div><div class=\"delete\"><a href=\"deletemydaily?id="+mydaily.getId()+"\">삭제</a></div></div>";
+            dailylist += "<div class=\"card-header\"><div class=\"title\">"+mydaily.getDailytitle()+"</div><div class=\"delete\"><a href=\"deletemydaily?id="+mydaily.getId()+"\">삭제</a></div></div>";
             dailylist += "<div class=\"card-body\">"+mydaily.getDailycontent()+"</div>";
             dailylist += "<div class=\"card-footer\">"+mydaily.getOutdate()+"</div>";
             dailylist += "</div>";

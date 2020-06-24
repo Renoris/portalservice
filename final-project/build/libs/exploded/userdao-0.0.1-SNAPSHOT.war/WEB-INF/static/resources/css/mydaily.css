@@ -29,7 +29,10 @@
     text-align: center;
 }
 
-.delete{
+.title{
     float:left;
+}
+.delete{
+    float:right;
     margin-right:10px;
 }
