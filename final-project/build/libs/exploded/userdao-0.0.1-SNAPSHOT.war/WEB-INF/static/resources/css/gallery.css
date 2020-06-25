@@ -31,13 +31,18 @@
 
 .date {
     float: right;
+    margin-right: 20px;
 }
 
-.creater {
+.creator {
     margin-right: 20px;
     float: right;
 }
 .delete {
+    margin-right: 20px;
+    float: right;
+}
+.update {
     margin-right: 20px;
     float: right;
 }

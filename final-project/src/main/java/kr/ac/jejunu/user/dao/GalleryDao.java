@@ -37,6 +37,12 @@ public class GalleryDao {
                 gallery.setPostcontent(rs.getString("postcontent"));
                 gallery.setPosttitle(rs.getString("posttitle"));
                 gallery.setPostdate(rs.getDate("postdate"));
+                SimpleDateFormat format1=new SimpleDateFormat("MM-dd");
+                SimpleDateFormat format2=new SimpleDateFormat("HH:mm");
+                String datestring=format1.format(rs.getDate("postdate"));
+                String timestring=format2.format(rs.getTime("postdate"));
+                String datetime=datestring+" "+timestring;
+                gallery.setOutdate(datetime);
             }
             return gallery;
         });
@@ -84,7 +90,7 @@ public class GalleryDao {
 
     public void update(Gallery gallery) {
         String sql = "update gallery set posttitle = ? , postcontent = ? ,postdate = ? where id =?";
-        Object[] params = new Object[]{gallery.getPosttitle(), gallery.getPostdate()};
+        Object[] params = new Object[]{gallery.getPosttitle(),gallery.getPostcontent(),gallery.getPostdate(),gallery.getId()};
         jdbcTemplate.update(sql, params);
     }
 

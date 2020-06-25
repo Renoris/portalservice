@@ -25,23 +25,29 @@ public class GalleryController {
     private final CommentDao commentDao;
     @GetMapping(path ="/gallery")
     public Model viewpost(@RequestParam("id") Integer id, Model model, HttpSession session) throws IOException {
-
         Gallery gallery=galleryDao.get(id);
+        UserAccount userAccount=(UserAccount) session.getAttribute("userAccount");
         ArrayList<Comment> comments=commentDao.getAll(id);
         model.addAttribute("commentlist",comments);
         model.addAttribute("gallery", gallery);
+        model.addAttribute("username",userAccount.getName());
         return model;
     }
 
     @PostMapping(path ="/gallery")
-    public String createcomment(@RequestParam Integer id, HttpSession session, @ModelAttribute Comment comment) throws IOException {
+    public Model createcomment(@RequestParam Integer id,Model model ,HttpSession session, @ModelAttribute Comment comment) throws IOException {
+        Gallery gallery=galleryDao.get(id);
         comment.setCommentdate(new java.util.Date());
         comment.setGalleryid(id);
         UserAccount userAccount=(UserAccount) session.getAttribute("userAccount");
         comment.setName(userAccount.getName());
         commentDao.insert(comment);
-        System.out.println(id);
-        return "redirect:/gallery?id="+id;
+        ArrayList<Comment> comments=commentDao.getAll(id);
+        model.addAttribute("username",userAccount.getName());
+        model.addAttribute("commentlist",comments);
+        model.addAttribute("msg","댓글이 등록되었습니다");
+        model.addAttribute("gallery", gallery);
+        return model;
     }
 
     @GetMapping(path="/deletegallery")

@@ -17,16 +17,9 @@ public class UserInterceptor implements HandlerInterceptor { //servlet에서 핸
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String requestUrl = request.getRequestURL().toString();
         HttpSession session = request.getSession();
-        if(requestUrl.contains("/login")){
+        if(requestUrl.contains("/login")||requestUrl.contains("/createaccount")||requestUrl.contains("/resources")){
             return true;
         }
-        else if (requestUrl.contains("/createaccount")){
-            return true;
-        }
-        else if (requestUrl.contains("/resources")){
-            return true;
-        }
-
         else {
             Object obj = session.getAttribute("userAccount");
             if (obj == null) {

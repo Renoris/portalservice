@@ -133,6 +133,7 @@
     var f= "<%=msg%>";
     if(!(f=="")){
       alert(f);
+      location.href="/lobby";
     }
 
 

@@ -92,7 +92,7 @@
           <div class="card mb-4 card-margin">
             <div class="card-header">
               <div class="gallery-title">게시글 목록</div><Button class="btn btn-primary button1"
-                onclick="location.href='/createpost'">게시글 작성</Button>
+                onclick="location.href='/creategallery'">게시글 작성</Button>
             </div>
             <div class="card-body">
 

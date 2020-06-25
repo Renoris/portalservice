@@ -1,6 +1,8 @@
 <%@ page import="kr.ac.jejunu.user.data.Comment" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="kr.ac.jejunu.user.data.Gallery" %>
+<%@ page import="kr.ac.jejunu.user.data.User" %>
+<%@ page import="kr.ac.jejunu.user.data.UserAccount" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 
@@ -19,7 +21,16 @@
     crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
     crossorigin="anonymous"></script>
-
+  <%
+    String msg=null;
+    try{
+      msg=request.getAttribute("msg").toString();
+      System.out.println(msg);
+    }
+    catch (Exception e){
+      msg="";
+    }
+  %>
 </head>
 
 <body class="sb-nav-fixed">
@@ -93,22 +104,47 @@
         <div class="container-fluid">
           <h1 class="mt-4">게시글</h1>
           <div class="card mb-4 card-margin">
+<%--            <%--%>
+<%--              String ingallery="";--%>
+<%--              Gallery post=(Gallery) request.getAttribute("gallery");--%>
+<%--              UserAccount userAccount=(UserAccount) session.getAttribute("userAccount");--%>
+<%--              ingallery += "<div class=\"card-header\">";--%>
+<%--              ingallery += "<div class=\"title\">"+post.getPosttitle()+"</div>";--%>
+<%--              if(userAccount.getName().equals(post.getName())){--%>
+<%--                ingallery += "<div class=\"delete\"><a href=\"/deletegallery?id="+post.getId()+"\">삭제</a></div>";--%>
+<%--                ingallery += "<div class=\"delete\"><a href=\"/updategallery?id="+post.getId()+"\">수정</a></div>";--%>
+<%--              }--%>
+<%--              ingallery += "<div class=\"date\">"+post.getOutdate()+"</div>";--%>
+<%--              ingallery += "<div class=\"creator\">"+post.getName()+"</div>";--%>
+<%--              ingallery += "</div>";--%>
+<%--              ingallery += "<div class=\"card-body\">";--%>
+<%--              ingallery += "<p>";--%>
+<%--              ingallery += post.getPostcontent();--%>
+<%--              ingallery += "</p>";--%>
+<%--              ingallery += "</div>";--%>
+<%--            %>--%>
+<%--            <%=ingallery%>--%>
             <%
-              String ingallery="";
+              String updatedelete="";
               Gallery post=(Gallery) request.getAttribute("gallery");
-              ingallery += "<div class=\"card-header\">";
-              ingallery += "<div class=\"title\">"+post.getPosttitle()+"</div>";
-              ingallery += "<div class=\"date\">04-21 21:42</div>";
-              ingallery += "<div class=\"creater\">"+post.getName()+"</div>";
-              ingallery += "<div class=\"delete\"><a href=\"/deletegallery?id="+post.getId()+"\">X</a></div>";
-              ingallery += "</div>";
-              ingallery += "<div class=\"card-body\">";
-              ingallery += "<p>";
-              ingallery += post.getPostcontent();
-              ingallery += "</p>";
-              ingallery += "</div>";
+              String username = (String) request.getAttribute("username");
+              if(post.getName().equals(username)){
+                updatedelete += "<div class=\"delete\"><a href=\"/deletegallery?id="+post.getId()+"\">삭제</a></div>";
+                updatedelete += "<div class=\"update\"><a href=\"/updategallery?id="+post.getId()+"\">수정</a></div>";
+              }
+
+              String gallerytitle=post.getPosttitle();
+              String gallerycontent=post.getPostcontent();
+              String gallerydate=post.getOutdate();
+              String galleryname=post.getName();
             %>
-            <%=ingallery%>
+            <div class="card-header">
+              <div class="title"><%=gallerytitle%> </div>
+              <%=updatedelete%>
+              <div class="date"><%=gallerydate%> </div>
+              <div class="creator"><%=galleryname%></div>
+            </div>
+            <div class="card-body"><p><%=gallerycontent%></p></div>
             <div class="card-footer">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -149,7 +185,15 @@
     </div>
 
   </div>
+  <script type="text/javascript">
+    var f= "<%=msg%>";
+    if(!(f=="")){
+      alert(f);
+      location.href=location.href=document.referrer;
+    }
 
+
+  </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
