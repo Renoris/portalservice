@@ -1,0 +1,108 @@
+.box {
+  border: 1px solid black;
+  /* border-width: 1px;
+        border-style: solid;
+        border-color: #fff; */
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+#bugwrapper {
+  width: 20px;
+  height: 20px;
+  top: 35px;
+  left: 35px;
+  position: absolute;
+}
+#bug {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  cursor: pointer;
+}
+.wrap {
+  margin: 10px auto;
+  width: 500px;
+}
+#point,
+#life {
+  color: blue;
+}
+
+.clip {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+
+  /* 추가된 부분 */
+  z-index: 100;
+  cursor: pointer;
+}
+
+.clip-top {
+  clip-path: polygon(50% 50%, 0 0, 100% 0);
+  /* 추가된 부분 */
+  animation: clip-top 0.3s;
+}
+
+.clip-left {
+  clip-path: polygon(50% 50%, 0 0, 0 100%);
+  /* 추가된 부분 */
+  animation: clip-left 0.3s;
+}
+
+.clip-right {
+  clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+  /* 추가된 부분 */
+  animation: clip-right 0.3s;
+}
+
+.clip-bottom {
+  clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+  /* 추가된 부분 */
+  animation: clip-bottom 0.3s;
+}
+
+@keyframes clip-top {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes clip-left {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes clip-right {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes clip-bottom {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
