@@ -63,15 +63,14 @@
               <div class="sb-nav-link-icon">
                 <i class="fas fa-columns"></i>
               </div>
-              게임들
+              게임
               <div class="sb-sidenav-collapse-arrow">
                 <i class="fas fa-angle-down"></i>
               </div>
             </a>
             <div class="collapse" id="collapseLayouts1" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
               <nav class="sb-sidenav-menu-nested nav">
-                <a class="nav-link" href="--게임1링크">파리잡기</a>
-                <a class="nav-link" href="--게임2링크">무언가</a>
+                <a class="nav-link" href="/buggame">곤충잡기</a>
               </nav>
             </div>
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts2"

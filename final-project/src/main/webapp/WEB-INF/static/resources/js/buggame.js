@@ -1,23 +1,45 @@
+let $point = document.getElementById('point');
+let $life = document.getElementById('life');
+const $box = document.querySelector('.box');
+const $bug = document.getElementById('bug');
+const $timer = document.getElementById('timer');
+const $finalscore = document.getElementById('final-score');
+let gogo;
+let score = 0;
+let life = 10;
+let timer = 10;
+let finalscore = 0;
+
+
+function sendPost(action) {
+  var form = document.createElement('form');
+  form.setAttribute('method', 'post');
+  form.setAttribute('action', action);
+  document.charset = "utf-8";
+  var hiddenField = document.createElement('input');
+  hiddenField.setAttribute('type', 'hidden');
+  hiddenField.setAttribute('name', 'score');
+  hiddenField.setAttribute('value', finalscore);
+  form.appendChild(hiddenField);
+  document.body.appendChild(form);
+  form.submit();
+}
+
+
 buggame();
-
 function buggame() {
-  let $point = document.getElementById('point');
-  let $life = document.getElementById('life');
-  const $box = document.querySelector('.box');
-  const $bug = document.getElementById('bug');
-  const $timer = document.getElementById('timer');
-  let gogo;
-  let score = 0;
-  let life = 10;
-  let timer = 10;
-
   function restartsetting() {
+    if (score > finalscore) {
+      finalscore = score;
+      $finalscore.innerHTML = finalscore;
+    }
     score = 0;
     life = 10;
     $point.innerHTML = score;
     clearInterval(gogo);
     lifegangsin();
     timergangsin();
+    sendPost("/buggame");
   }
 
   function starttimer() {
@@ -32,7 +54,7 @@ function buggame() {
         lifegangsin();
         timergangsin();
       }
-    }, 150);
+    }, 80);
   }
 
   $box.addEventListener('click', (event) => {
@@ -46,6 +68,7 @@ function buggame() {
     $life.innerHTML = life;
     if (life == 0) {
       alert('게임 종료');
+      restartsetting();
     }
   }
 

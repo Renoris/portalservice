@@ -1,5 +1,7 @@
 package kr.ac.jejunu.user.dao;
 
+import kr.ac.jejunu.user.data.Gallery;
+import kr.ac.jejunu.user.data.GameScore;
 import kr.ac.jejunu.user.data.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -9,6 +11,7 @@ import org.springframework.stereotype.Component;
 
 import java.sql.PreparedStatement;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 
@@ -22,46 +25,62 @@ public class ScoreDao {
 //        this.jdbcTemplate = jdbcTemplate;
 //    }
 
-    //change
-    public User get(Integer id) {
+    //use viewpost
+    public GameScore get(Integer id) {
         Object[] params = new Object[]{id};
-        String sql = "select id, name, password from userinfo where id = ? ";
+        String sql = "select id, name, score, scoredate from gamescore where id = ? ";
         return jdbcTemplate.query(sql, params, rs -> {
-            User user = null;
+            GameScore score = null;
             if (rs.next()) {
-                user = new User();
-                user.setId(rs.getInt("id"));
-                user.setName(rs.getString("name"));
-                user.setPassword(rs.getString("password"));
-                System.out.println(user.toString());
+                score = new GameScore();
+                score.setId(rs.getInt("id"));
+                score.setName(rs.getString("name"));
+                score.setScore(rs.getInt("score"));
+                score.setDate(rs.getDate("scoredate"));
             }
-            return user;
+            return score;
         });
     }
 
-    public ArrayList<User> getUserAll() {
-        ArrayList<User> userList = new ArrayList<>();
-        Object[] params = new Object[]{};
-        String sql = "select id, name, password from userinfo";
+    public GameScore get_name(String name) {
+        Object[] params = new Object[]{name};
+        String sql = "select id, name, score, scoredate from gamescore where name = ? ";
         return jdbcTemplate.query(sql, params, rs -> {
-            User user = null;
-            while (rs.next()) {
-                user = new User();
-                user.setId(rs.getInt("id"));
-                user.setName(rs.getString("name"));
-                user.setPassword(rs.getString("password"));
-                userList.add(user);
+            GameScore score = null;
+            if (rs.next()) {
+                score = new GameScore();
+                score.setId(rs.getInt("id"));
+                score.setName(rs.getString("name"));
+                score.setScore(rs.getInt("score"));
+                score.setDate(rs.getDate("scoredate"));
             }
-
-            return userList;
+            return score;
+        });
+    }
+    //use lobby
+    public ArrayList<GameScore> getAll() {
+        ArrayList<GameScore> scoreList = new ArrayList<>();
+        Object[] params = new Object[]{};
+        String sql = "select id, name, score, scoredate from gamescore ORDER BY score DESC";
+        return jdbcTemplate.query(sql, params, rs -> {
+            GameScore score = null;
+            while (rs.next()) {
+                score = new GameScore();
+                score.setId(rs.getInt("id"));
+                score.setName(rs.getString("name"));
+                score.setScore(rs.getInt("score"));
+                score.setDate(rs.getDate("scoredate"));
+                scoreList.add(score);
+            }
+            return scoreList;
         });
     }
 
-    public void insert(User user) {
+    public void insert(GameScore score) {
         //mysql
         //driver 로딩
-        Object[] params = new Object[]{user.getName(), user.getPassword()};
-        String sql = "insert into userinfo (name, password) values(?,?)";
+        Object[] params = new Object[]{score.getName(),score.getScore(),score.getDate()};
+        String sql = "Insert into gamescore(name, score, scoredate) values(?,?,?)";
         KeyHolder keyHolder = new GeneratedKeyHolder();
         jdbcTemplate.update(con -> {
             PreparedStatement preparedStatement = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
@@ -70,17 +89,19 @@ public class ScoreDao {
             }
             return preparedStatement;
         }, keyHolder);
-        user.setId(keyHolder.getKey().intValue());
+        score.setId(keyHolder.getKey().intValue());
     }
 
-    public void update(User user) {
-        String sql = "update userinfo set name = ?, password = ? where id =?";
-        Object[] params = new Object[]{user.getName(), user.getPassword(), user.getId()};
+    public void update(GameScore score) {
+        String sql = "update gamescore set name = ?, score = ?, scoredate = ? where name = ?";
+        Object[] params = new Object[]{score.getName(), score.getScore(), score.getDate(), score.getName()};
         jdbcTemplate.update(sql, params);
     }
 
+
+
     public void delete(Integer id) {
-        String sql = "delete from userinfo where id = ?";
+        String sql = "delete from gamescore where id = ?";
         Object[] params = new Object[]{id};
         jdbcTemplate.update(sql, params);
     }

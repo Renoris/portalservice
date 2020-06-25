@@ -26,7 +26,7 @@ public class AccountDao {
     //change
     public UserAccount get(String name, String password) {
         Object[] params = new Object[]{name, password};
-        String sql = "select id, name, password from useraccount where name = ? and password = ? ";
+        String sql = "select id, name, password ,admin from useraccount where name = ? and password = ? ";
         return jdbcTemplate.query(sql, params, rs -> {
             UserAccount userAccount = null;
             if (rs.next()) {
@@ -34,27 +34,13 @@ public class AccountDao {
                 userAccount.setId(rs.getInt("id"));
                 userAccount.setName(rs.getString("name"));
                 userAccount.setPassword(rs.getString("password"));
+                userAccount.setAdmin(rs.getBoolean("admin"));
                 System.out.println(userAccount.toString());
             }
             return userAccount;
         });
     }
 
-    public UserAccount getmatch(Integer id) {
-        Object[] params = new Object[]{id};
-        String sql = "select id, name, password from useraccount where id = ? ";
-        return jdbcTemplate.query(sql, params, rs -> {
-            UserAccount userAccount = null;
-            if (rs.next()) {
-                userAccount = new UserAccount();
-                userAccount.setId(rs.getInt("id"));
-                userAccount.setName(rs.getString("name"));
-                userAccount.setPassword(rs.getString("password"));
-                System.out.println(userAccount.toString());
-            }
-            return userAccount;
-        });
-    }
 
     public ArrayList<UserAccount> getUserAll() { //관리자용
         ArrayList<UserAccount> userList = new ArrayList<>();
@@ -67,6 +53,7 @@ public class AccountDao {
                 userAccount.setId(rs.getInt("id"));
                 userAccount.setName(rs.getString("name"));
                 userAccount.setPassword(rs.getString("password"));
+                userAccount.setAdmin(rs.getBoolean("admin"));
                 userList.add(userAccount);
             }
 
