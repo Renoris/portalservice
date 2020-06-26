@@ -33,7 +33,7 @@
         <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-          <a class="dropdown-item" href="--update">정보수정</a>
+          <a class="dropdown-item" href="/admin">관리자</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/logout">로그아웃</a>
         </div>

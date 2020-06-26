@@ -9,15 +9,14 @@ let score = 0;
 let life = 10;
 let timer = 10;
 let finalscore = 0;
-let clickbox=false;
-let clickbug=false;
+
 
 function sendPost(action) {
-  const form = document.createElement('form');
+  var form = document.createElement('form');
   form.setAttribute('method', 'post');
   form.setAttribute('action', action);
   document.charset = "utf-8";
-  const hiddenField = document.createElement('input');
+  var hiddenField = document.createElement('input');
   hiddenField.setAttribute('type', 'hidden');
   hiddenField.setAttribute('name', 'score');
   hiddenField.setAttribute('value', finalscore);
@@ -26,8 +25,8 @@ function sendPost(action) {
   form.submit();
 }
 
-buggame();
 
+buggame();
 function buggame() {
   function restartsetting() {
     if (score > finalscore) {
@@ -49,13 +48,11 @@ function buggame() {
         timer--;
         $timer.innerHTML = timer;
       } else if (timer <= 0) {
-        bugmove();
         life--;
-
         lifegangsin();
         timergangsin();
       }
-    }, 80);
+    }, 70);
   }
 
   $box.addEventListener('click', (event) => {
@@ -79,34 +76,29 @@ function buggame() {
 
   function scoreup() {
     score++;
+    life++;
     $point.innerHTML = score;
+    $life.innerHTML = life;
   }
 
   $bug.addEventListener('click', (event) => {
-    life++;
-    $life.innerHTML = life;
-
-    timergangsin();
-    bugmove();
-    scoreup();
+    console.log("작동하니?")
     if (score == 0) {
       starttimer();
+      console.log("작동안하니?")
     }
+    bugmove();
+    scoreup();
+    timergangsin();
   });
 
-
-
-
   function bugmove() {
-    $bug.style.left = `${generateRandom(35, 365)}px`;
-    $bug.style.top = `${generateRandom(35, 365)}px`;
+    $bug.style.left = `${generateRandom(10, 390)}px`;
+    $bug.style.top = `${generateRandom(10, 390)}px`;
   }
 
   var generateRandom = function (min, max) {
     var ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
     return ranNum;
   };
-
-
-
 }

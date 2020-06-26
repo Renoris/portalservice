@@ -44,4 +44,10 @@ public class LoginController {
             return model;
         }
     }
+    @ExceptionHandler(Exception.class)
+    public ModelAndView error(Exception e){
+        ModelAndView modelAndView=new ModelAndView("error");
+        modelAndView.addObject("e",e);
+        return modelAndView;
+    }
 }

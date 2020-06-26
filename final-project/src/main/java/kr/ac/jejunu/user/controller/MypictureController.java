@@ -8,10 +8,7 @@ import kr.ac.jejunu.user.data.UserAccount;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -52,21 +49,6 @@ public class MypictureController {
         return modelAndView;
     }
 
-    @PostMapping("/upload")
-    public ModelAndView upload(@RequestParam("file") MultipartFile file, HttpServletRequest request) throws IOException {
-        File path = new File(request.getServletContext().getRealPath("/")+"/WEB-INF/static/resources/images/"+file.getOriginalFilename());
-        FileOutputStream fileOutputStream = new FileOutputStream(path);
-        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
-        bufferedOutputStream.write(file.getBytes());
-        bufferedOutputStream.close();//여기까지 저장
-        System.out.println(request.getParameter("test"));
-
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("url", "/resources/images/"+file.getOriginalFilename());//여기는 보여주는건가
-        return modelAndView;
-    }
-
-
     @GetMapping(path="/deletemypicture")
     public Model deletemypicture(@RequestParam Integer id, HttpSession session,Model model){
         try {
@@ -88,10 +70,10 @@ public class MypictureController {
     }
 
 
-//    @ExceptionHandler(Exception.class)
-//    public ModelAndView error(Exception e){
-//        ModelAndView modelAndView=new ModelAndView("error");
-//        modelAndView.addObject("e",e);
-//        return modelAndView;
-//    }
+    @ExceptionHandler(Exception.class)
+    public ModelAndView error(Exception e){
+        ModelAndView modelAndView=new ModelAndView("error");
+        modelAndView.addObject("e",e);
+        return modelAndView;
+    }
 }

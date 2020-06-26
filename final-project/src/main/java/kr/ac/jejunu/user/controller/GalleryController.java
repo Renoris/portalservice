@@ -11,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -52,7 +53,7 @@ public class GalleryController {
 
     @GetMapping(path="/deletegallery")
     public Model deletegallery(@RequestParam Integer id, HttpSession session,Model model){
-        try {
+//        try {
             UserAccount userAccount = (UserAccount) session.getAttribute("userAccount");
             Gallery gallery = galleryDao.get(id);
             if(gallery.getName().equals(userAccount.getName())){
@@ -64,14 +65,14 @@ public class GalleryController {
                 model.addAttribute("msg", "게시글 작성자가 아닙니다.");
                 return model;
             }
-        } catch (Exception e) {
-            model.addAttribute("msg", "잘못된 시도입니다.");
-            return model;
-        }
+//        } catch (Exception e) {
+//            model.addAttribute("msg", "잘못된 시도입니다.");
+//            return model;
+//        }
     }
 
     @GetMapping(path="/deletecomment")
-    public Model deletcomment(@RequestParam Integer id, HttpSession session,Model model){
+    public Model deletecomment(@RequestParam Integer id, HttpSession session,Model model){
         try {
             UserAccount userAccount = (UserAccount) session.getAttribute("userAccount");
             Comment comment = commentDao.get(id);

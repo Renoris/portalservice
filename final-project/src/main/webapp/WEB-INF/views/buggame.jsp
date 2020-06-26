@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <title>Dashboard - SB Admin</title>
+  <title>BJ-PortalService</title>
   <link rel="stylesheet" type="text/css" href="/resources/css/styles.css">
   <link rel="stylesheet" type="text/css" href="/resources/css/buggame.css">
   <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
@@ -42,9 +42,9 @@
         <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-          <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
+          <a class="dropdown-item" href="/admin">관리자</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="login.html">Logout</a>
+          <a class="dropdown-item" href="/logout">Logout</a>
         </div>
       </li>
     </ul>

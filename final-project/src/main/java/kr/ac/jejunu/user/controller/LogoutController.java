@@ -5,7 +5,9 @@ import kr.ac.jejunu.user.dao.GalleryDao;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
@@ -20,10 +22,10 @@ public class LogoutController {
     }
 
 
-//    @ExceptionHandler(Exception.class)
-//    public ModelAndView error(Exception e){
-//        ModelAndView modelAndView=new ModelAndView("error");
-//        modelAndView.addObject("e",e);
-//        return modelAndView;
-//    }
+    @ExceptionHandler(Exception.class)
+    public ModelAndView error(Exception e){
+        ModelAndView modelAndView=new ModelAndView("error");
+        modelAndView.addObject("e",e);
+        return modelAndView;
+    }
 }
