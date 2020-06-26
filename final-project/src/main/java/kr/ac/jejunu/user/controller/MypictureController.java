@@ -54,7 +54,7 @@ public class MypictureController {
         try {
             UserAccount userAccount = (UserAccount) session.getAttribute("userAccount");
             Mypicture mypicture = mypictureDao.get(id);
-            if(mypicture.getName().equals(userAccount.getName())){
+            if(mypicture.getName().equals(userAccount.getName())||userAccount.isAdmin()){
                 mypictureDao.delete(id);
                 model.addAttribute("msg", "정상적으로 삭제되었습니다.");
                 return model;

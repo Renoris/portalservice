@@ -71,6 +71,30 @@ public class CommentDao {
         });
     }
 
+    public ArrayList<Comment> getAll_admin() {
+        ArrayList<Comment> commentList = new ArrayList<>();
+        Object[] params = new Object[]{};
+        String sql = "select id, galleryid, name,comment ,commentdate from comment ORDER BY id DESC";
+        return jdbcTemplate.query(sql, params, rs -> {
+            Comment comment = null;
+            while (rs.next()) {
+                comment = new Comment();
+                comment.setId(rs.getInt("id"));
+                comment.setName(rs.getString("name"));
+                comment.setGalleryid(rs.getInt("galleryid"));
+                comment.setComment(rs.getString("comment"));
+                SimpleDateFormat format1=new SimpleDateFormat("MM-dd");
+                SimpleDateFormat format2=new SimpleDateFormat("HH:mm");
+                String datestring=format1.format(rs.getDate("commentdate"));
+                String timestring=format2.format(rs.getTime("commentdate"));
+                String datetime=datestring+" "+timestring;
+                comment.setOutdate(datetime);
+                commentList.add(comment);
+            }
+            return commentList;
+        });
+    }
+
     public void insert(Comment comment) {
         //mysql
         //driver 로딩

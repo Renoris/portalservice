@@ -45,7 +45,7 @@ public class AccountDao {
     public ArrayList<UserAccount> getUserAll() { //관리자용
         ArrayList<UserAccount> userList = new ArrayList<>();
         Object[] params = new Object[]{};
-        String sql = "select id, name, password from account";
+        String sql = "select id, name, password, admin from useraccount";
         return jdbcTemplate.query(sql, params, rs -> {
             UserAccount userAccount = null;
             while (rs.next()) {

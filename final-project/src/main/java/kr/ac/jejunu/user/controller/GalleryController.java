@@ -1,19 +1,15 @@
 package kr.ac.jejunu.user.controller;
 
-import kr.ac.jejunu.user.dao.AccountDao;
 import kr.ac.jejunu.user.dao.CommentDao;
 import kr.ac.jejunu.user.dao.GalleryDao;
 import kr.ac.jejunu.user.data.Comment;
 import kr.ac.jejunu.user.data.Gallery;
-import kr.ac.jejunu.user.data.Mydaily;
 import kr.ac.jejunu.user.data.UserAccount;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -22,7 +18,6 @@ import java.util.ArrayList;
 @RequiredArgsConstructor
 public class GalleryController {
     private final GalleryDao galleryDao;
-    private final AccountDao accountDao;
     private final CommentDao commentDao;
     @GetMapping(path ="/gallery")
     public Model viewpost(@RequestParam("id") Integer id, Model model, HttpSession session) throws IOException {
@@ -53,10 +48,10 @@ public class GalleryController {
 
     @GetMapping(path="/deletegallery")
     public Model deletegallery(@RequestParam Integer id, HttpSession session,Model model){
-//        try {
+        try {
             UserAccount userAccount = (UserAccount) session.getAttribute("userAccount");
             Gallery gallery = galleryDao.get(id);
-            if(gallery.getName().equals(userAccount.getName())){
+            if(gallery.getName().equals(userAccount.getName())||userAccount.isAdmin()){
                 galleryDao.delete(id);
                 model.addAttribute("msg", "정상적으로 삭제되었습니다.");
                 return model;
@@ -65,10 +60,10 @@ public class GalleryController {
                 model.addAttribute("msg", "게시글 작성자가 아닙니다.");
                 return model;
             }
-//        } catch (Exception e) {
-//            model.addAttribute("msg", "잘못된 시도입니다.");
-//            return model;
-//        }
+        } catch (Exception e) {
+            model.addAttribute("msg", "잘못된 시도입니다.");
+            return model;
+        }
     }
 
     @GetMapping(path="/deletecomment")
@@ -76,7 +71,7 @@ public class GalleryController {
         try {
             UserAccount userAccount = (UserAccount) session.getAttribute("userAccount");
             Comment comment = commentDao.get(id);
-            if(comment.getName().equals(userAccount.getName())){
+            if(comment.getName().equals(userAccount.getName())||userAccount.isAdmin()){
                 commentDao.delete(id);
                 model.addAttribute("msg", "정상적으로 삭제되었습니다.");
                 return model;
@@ -91,10 +86,10 @@ public class GalleryController {
         }
     }
 
-//    @ExceptionHandler(Exception.class)
-//    public ModelAndView error(Exception e){
-//        ModelAndView modelAndView=new ModelAndView("error");
-//        modelAndView.addObject("e",e);
-//        return modelAndView;
-//    }
+    @ExceptionHandler(Exception.class)
+    public ModelAndView error(Exception e){
+        ModelAndView modelAndView=new ModelAndView("error");
+        modelAndView.addObject("e",e);
+        return modelAndView;
+    }
 }

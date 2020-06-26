@@ -139,7 +139,7 @@
     var f= "<%=msg%>";
     if(!(f=="")){
       alert(f);
-      history.go(-2);
+      location.href ="/lobby";
     }
 
 

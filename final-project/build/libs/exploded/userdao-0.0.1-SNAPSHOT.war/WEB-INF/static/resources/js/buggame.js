@@ -52,7 +52,7 @@ function buggame() {
         lifegangsin();
         timergangsin();
       }
-    }, 80);
+    }, 70);
   }
 
   $box.addEventListener('click', (event) => {

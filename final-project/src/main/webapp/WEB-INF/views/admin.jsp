@@ -1,6 +1,11 @@
+<%@ page import="kr.ac.jejunu.user.data.GameScore" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page import="kr.ac.jejunu.user.data.Gallery" %>
+<%@ page import="kr.ac.jejunu.user.data.Comment" %>
 <%@ page import="kr.ac.jejunu.user.data.UserAccount" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <html>
 
 <head>
@@ -11,24 +16,21 @@
   <meta name="author" content="" />
   <title>BJ-PortalService</title>
   <link rel="stylesheet" type="text/css" href="/resources/css/styles.css">
-  <link rel="stylesheet" type="text/css" href="/resources/css/createpost.css">
+  <link rel="stylesheet" type="text/css" href="/resources/css/admin.css">
   <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
     crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
     crossorigin="anonymous"></script>
-  <%
-    String msg=null;
-    try{
-      msg=request.getAttribute("msg").toString();
-      System.out.println(msg);
-    }
-    catch (Exception e){
-      msg="";
-    }
-  %>
-
 </head>
-
+<%
+  String msg=null;
+  try{
+    msg=request.getAttribute("msg").toString();
+  }
+  catch (Exception e){
+    msg="";
+  }
+%>
 <body class="sb-nav-fixed">
   <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     <a class="navbar-brand" href="index.html">BJ-PortalService</a><button class="btn btn-link btn-sm order-1 order-lg-0"
@@ -96,35 +98,103 @@
     <div id="layoutSidenav_content">
       <main>
         <div class="container-fluid">
-          <h1 class="mt-4">게시글</h1>
+          <h1 class="mt-4">관리자 페이지</h1>
+        </div>
+        <div class="bjtable">
+          <table class="table-bordered">
+            <%
+              String userlist = "";
+              try{
+              ArrayList<UserAccount> userAccountArrayList = (ArrayList<UserAccount>) request.getAttribute("userlist");
+              for (UserAccount userAccount : userAccountArrayList) {
+                userlist += "<tr>";
+                userlist += "<td style=\"width:100px;\">"+userAccount.getName()+"</td>";
+                userlist += "<td style=\"width:50px;\"><a href=\"/deleteuser?id="+userAccount.getId()+"\">삭제</a></td>";
+                userlist += "</tr>";
+              }}catch (Exception e){
+                msg="당신은 관리자가 아니야";
+              }
+            %>
+            <tr>
+              <thead>
+              <tr>
+                <td style="width:100px;">유저이름</td>
+                <td style="width:20px;"><a href="/deletegallery?id=">삭제</a></td>
+              </tr>
+              </thead>
+              <tbody>
+              <%=userlist%>
+              </tbody>
+            </tr>
+          </table>
+        </div>
+        <div class="bjtable">
+          <table class="table-bordered">
+            <%
+              String gallerylist = "";
+              try{
+                ArrayList<Gallery> galleryArrayList = (ArrayList<Gallery>) request.getAttribute("gallerylist");
+                for (Gallery gallery : galleryArrayList) {
+                  gallerylist += "<tr>";
+                  gallerylist += "<td style=\"width:100px;\">"+gallery.getPosttitle()+"</td>";
+                  gallerylist += "<td style=\"width:300px;\">"+gallery.getPostcontent()+"</td>";
+                  gallerylist += "<td style=\"width:100px;\">"+gallery.getName()+"</td>";
+                  gallerylist += "<td style=\"width:50px;\"><a href=\"/deletegallery?id="+gallery.getId()+"\">삭제</a></td>";
+                  gallerylist += "</tr>";
+                }
+              }catch (Exception e){
+                msg="당신은 관리자가 아니야";
+              }
 
-          <form method="POST">
-            <div class="card mb-4 card-margin">
-              <%
-                Gallery post=(Gallery) request.getAttribute("gallery");
-                String posttitle=post.getPosttitle();
-                String postcontent=post.getPostcontent();
-              %>
-              <div class="card-header">
-                <div class="form-group">
-                  <label for="posttitle">게시글 제목</label>
-                  <input type="text" class="form-control" name="posttitle" id="posttitle" value="<%=posttitle%>">
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="form-group">
-                  <label for="postcontent">게시글 내용</label>
-                  <textarea class="form-control" rows="15" name="postcontent" id="postcontent"><%=postcontent%></textarea>
-                </div>
-              </div>
-              <div class="card-footer">
-                <button type="submit" class="btn btn-primary">게시글 수정</button>
-              </div>
-            </div>
-          </form>
+            %>
+            <tr>
+              <thead>
+              <tr>
+                <td style="width:100px;">게시글 제목</td>
+                <td style="width:200px;">게시글 내용</td>
+                <td style="width:50px;">게시글 작성자</td>
+                <td style="width:20px;">삭제</td>
+              </tr>
+              </thead>
+              <tbody>
+              <%=gallerylist%>
+              </tbody>
+            </tr>
+          </table>
+        </div>
+        <div class="bjtable">
+          <%
+            String commentlist = "";
+            try {
+              ArrayList<Comment> commentArrayList = (ArrayList<Comment>) request.getAttribute("commentlist");
+              for (Comment comment : commentArrayList) {
+                commentlist += "<tr>";
+                commentlist += "<td style=\"width:400px;\">" + comment.getComment() + "</td>";
+                commentlist += "<td style=\"width:100px;\">" + comment.getName() + "</td>";
+                commentlist += "<td style=\"width:50px;\"><a href=\"/deletecomment?id=" + comment.getId() + "\">삭제</a></td>";
+                commentlist += "</tr>";
+              }
+            }catch (Exception e){
+              msg="당신은 관리자가 아니야";
+            }
+          %>
+          <table class="table-bordered">
+            <tr>
+              <thead>
+              <tr>
+                <td style="width:200px;">코멘트 내용</td>
+                <td style="width:50px;">코멘트 작성자</td>
+                <td style="width:20px;">삭제</td>
+              </tr>
+              </thead>
+              <tbody>
+              <%=commentlist%>
+              </tbody>
+            </tr>
+          </table>
         </div>
       </main>
-      <footer class="py-4 bg-light mt-auto">
+      <footer class=" py-4 bg-light mt-auto">
         <div class="container-fluid">
           <div class="d-flex align-items-center justify-content-between small">
             <div class="text-muted">bj &middot; PortalService</div>
@@ -132,29 +202,23 @@
         </div>
       </footer>
     </div>
-
   </div>
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
   <script type="text/javascript">
     var f= "<%=msg%>";
     if(!(f=="")){
       alert(f);
-      location.href ="/lobby";
+      location.href="/lobby";
     }
-
-
   </script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
-  <script src="/resources/js/scripts.js"></script>
+  <script src="/resources/js/buggame.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-
   <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
-  <script>
-
-  </script>
+  <script src="/resources/assets/demo/datatables-demo.js"></script>
+  <script src="/resources/js/scripts.js"></script>
 </body>
 
 </html>

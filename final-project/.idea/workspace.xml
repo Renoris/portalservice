@@ -25,100 +25,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e01d89a8-bb98-43e5-87d8-4598194bcef2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/resources/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminerror.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/deleteuser.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/daoFactory.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/daoFactory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserContextListner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserRequestListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/CreateAccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/CreateAccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/CreateUpdateGalleryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/CreateUpdateGalleryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/UserInterceptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/GalleryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/GalleryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/GamescoreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/GamescoreController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/LobbyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/LobbyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/LogoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/LogoutController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/MydailyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/MydailyController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/MypictureController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/MypictureController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/RestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/SimpleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/static/resources/css/buggame.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/static/resources/css/buggame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/static/resources/images/20200428080542.1048641.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/dao/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/dao/AccountDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/dao/CommentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/dao/CommentDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/static/resources/js/buggame.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/static/resources/js/buggame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/buggame.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/buggame.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/creategallery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/creategallery.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/gallery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/gallery.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/getuser.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/lobby.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/lobby.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/mydaily.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/mydaily.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/mypicture.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/mypicture.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/updategallery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/updategallery.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/upload.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/user.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/userall.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/변형템플릿.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/초기템플릿.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/user.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserContextListner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserRequestListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/CreateAccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/CreateAccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/CreateUpdateGalleryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/CreateUpdateGalleryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/UserInterceptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/GalleryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/GalleryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/GamescoreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/GamescoreController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/LobbyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/LobbyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/LogoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/LogoutController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/MydailyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/MydailyController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/MypictureController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/MypictureController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/RestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/SimpleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/user/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/daoFactory.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/daoFactory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserContextListner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserRequestListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/CreateAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/CreateAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/CreateUpdateGalleryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/CreateUpdateGalleryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/UserInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/GalleryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/GalleryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/GamescoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/GamescoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/LobbyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/LobbyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/LogoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/LogoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/MydailyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/MydailyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/MypictureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/MypictureController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/RestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/SimpleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/daoFactory.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/daoFactory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/quiz7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/quiz7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/quiz7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/resources/css/buggame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/resources/css/buggame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/resources/js/buggame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/resources/js/buggame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/buggame.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/buggame.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/creategallery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/creategallery.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/gallery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/gallery.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/getuser.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lobby.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lobby.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mydaily.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mydaily.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mypicture.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mypicture.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/dao/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/dao/CommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/dao/CommentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/updategallery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/updategallery.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userall.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/변형템플릿.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/초기템플릿.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/user.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/kr/ac/jejunu/user/UserDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kr/ac/jejunu/user/UserDaoTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -506,7 +434,7 @@
       <workItem from="1592896735384" duration="44000" />
       <workItem from="1592896797275" duration="5347000" />
       <workItem from="1592940521462" duration="26016000" />
-      <workItem from="1593106496425" duration="20399000" />
+      <workItem from="1593106496425" duration="26708000" />
     </task>
     <servers />
   </component>
@@ -589,65 +517,65 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="658" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592778274665" />
-    <state width="1293" height="290" key="GridCell.Tab.0.bottom" timestamp="1593144748805">
+    <state width="1293" height="290" key="GridCell.Tab.0.bottom" timestamp="1593151025296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593144748805" />
+    <state width="1293" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593151025296" />
     <state width="1293" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.0.center" timestamp="1593144748805">
+    <state width="1293" height="290" key="GridCell.Tab.0.center" timestamp="1593151025295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.0.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593144748805" />
+    <state width="1293" height="290" key="GridCell.Tab.0.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593151025295" />
     <state width="1293" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647859" />
-    <state width="1293" height="290" key="GridCell.Tab.0.left" timestamp="1593144748804">
+    <state width="1293" height="290" key="GridCell.Tab.0.left" timestamp="1593151025295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.0.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593144748804" />
+    <state width="1293" height="290" key="GridCell.Tab.0.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593151025295" />
     <state width="1293" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647859" />
-    <state width="1293" height="290" key="GridCell.Tab.0.right" timestamp="1593144748805">
+    <state width="1293" height="290" key="GridCell.Tab.0.right" timestamp="1593151025295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.0.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593144748805" />
+    <state width="1293" height="290" key="GridCell.Tab.0.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593151025295" />
     <state width="1293" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.1.bottom" timestamp="1593144748742">
+    <state width="1293" height="290" key="GridCell.Tab.1.bottom" timestamp="1593151025196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593144748742" />
+    <state width="1293" height="290" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593151025196" />
     <state width="1293" height="284" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.1.center" timestamp="1593144748742">
+    <state width="1293" height="290" key="GridCell.Tab.1.center" timestamp="1593151025196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.1.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593144748742" />
+    <state width="1293" height="290" key="GridCell.Tab.1.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593151025196" />
     <state width="1293" height="284" key="GridCell.Tab.1.center/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.1.left" timestamp="1593144748742">
+    <state width="1293" height="290" key="GridCell.Tab.1.left" timestamp="1593151025196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.1.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593144748742" />
+    <state width="1293" height="290" key="GridCell.Tab.1.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593151025196" />
     <state width="1293" height="284" key="GridCell.Tab.1.left/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.1.right" timestamp="1593144748742">
+    <state width="1293" height="290" key="GridCell.Tab.1.right" timestamp="1593151025196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.1.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593144748742" />
+    <state width="1293" height="290" key="GridCell.Tab.1.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593151025196" />
     <state width="1293" height="284" key="GridCell.Tab.1.right/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.2.bottom" timestamp="1593144748743">
+    <state width="1293" height="290" key="GridCell.Tab.2.bottom" timestamp="1593151025197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593144748743" />
+    <state width="1293" height="290" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593151025197" />
     <state width="1293" height="284" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.2.center" timestamp="1593144748742">
+    <state width="1293" height="290" key="GridCell.Tab.2.center" timestamp="1593151025197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.2.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593144748742" />
+    <state width="1293" height="290" key="GridCell.Tab.2.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593151025197" />
     <state width="1293" height="284" key="GridCell.Tab.2.center/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.2.left" timestamp="1593144748742">
+    <state width="1293" height="290" key="GridCell.Tab.2.left" timestamp="1593151025197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.2.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593144748742" />
+    <state width="1293" height="290" key="GridCell.Tab.2.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593151025197" />
     <state width="1293" height="284" key="GridCell.Tab.2.left/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.2.right" timestamp="1593144748743">
+    <state width="1293" height="290" key="GridCell.Tab.2.right" timestamp="1593151025197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.2.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593144748743" />
+    <state width="1293" height="290" key="GridCell.Tab.2.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593151025197" />
     <state width="1293" height="284" key="GridCell.Tab.2.right/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
     <state width="1293" height="282" key="GridCell.Tab.3.bottom" timestamp="1592760790048">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -693,14 +621,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="265" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1588331901517" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1592941667832">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1593146183613">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592941667832" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1593002487972">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593146183613" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1593150355473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593002487972" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593150355473" />
     <state x="2543" y="383" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592859350329" />
     <state x="531" y="203" key="spring file set editor" timestamp="1590726087083">
       <screen x="0" y="0" width="1920" height="1040" />
