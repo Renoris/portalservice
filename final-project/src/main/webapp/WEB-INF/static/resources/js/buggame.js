@@ -9,14 +9,15 @@ let score = 0;
 let life = 10;
 let timer = 10;
 let finalscore = 0;
-
+let clickbox=false;
+let clickbug=false;
 
 function sendPost(action) {
-  var form = document.createElement('form');
+  const form = document.createElement('form');
   form.setAttribute('method', 'post');
   form.setAttribute('action', action);
   document.charset = "utf-8";
-  var hiddenField = document.createElement('input');
+  const hiddenField = document.createElement('input');
   hiddenField.setAttribute('type', 'hidden');
   hiddenField.setAttribute('name', 'score');
   hiddenField.setAttribute('value', finalscore);
@@ -25,8 +26,8 @@ function sendPost(action) {
   form.submit();
 }
 
-
 buggame();
+
 function buggame() {
   function restartsetting() {
     if (score > finalscore) {
@@ -60,7 +61,6 @@ function buggame() {
   $box.addEventListener('click', (event) => {
     life--;
     lifegangsin();
-    bugmove();
     timergangsin();
   });
 
@@ -76,29 +76,37 @@ function buggame() {
     timer = 10;
     $timer.innerHTML = timer;
   }
+
   function scoreup() {
     score++;
-    life++;
     $point.innerHTML = score;
-    $life.innerHTML = life;
   }
 
   $bug.addEventListener('click', (event) => {
+    life++;
+    $life.innerHTML = life;
+
+    timergangsin();
+    bugmove();
+    scoreup();
     if (score == 0) {
       starttimer();
     }
-    bugmove();
-    scoreup();
-    timergangsin();
   });
 
+
+
+
   function bugmove() {
-    $bug.style.left = `${generateRandom(10, 390)}px`;
-    $bug.style.top = `${generateRandom(10, 390)}px`;
+    $bug.style.left = `${generateRandom(35, 365)}px`;
+    $bug.style.top = `${generateRandom(35, 365)}px`;
   }
 
   var generateRandom = function (min, max) {
     var ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
     return ranNum;
   };
+
+
+
 }

@@ -40,13 +40,14 @@ public class GamescoreController {
             score.setDate(new java.util.Date());
             if(scoreDao.get_name(userAccount.getName())==null){
                 scoreDao.insert(score);
+                model.addAttribute("msg", "첫 기록입니다.");
             }
             else{
                 if(score.getScore()>scoreDao.get_name(userAccount.getName()).getScore()){
                     scoreDao.update(score);
+                    model.addAttribute("msg", "기록 갱신");
                 }
             }
-            model.addAttribute("msg", "정상적으로 등록되었습니다.");
             ArrayList<GameScore> gameScores=scoreDao.getAll();
             model.addAttribute("scorelist",gameScores);
             return model;

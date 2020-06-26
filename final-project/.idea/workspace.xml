@@ -25,34 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e01d89a8-bb98-43e5-87d8-4598194bcef2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/GamescoreController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/resources/css/buggame.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/resources/images/bug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/resources/js/buggame.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/buggame.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/dao/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/dao/AccountDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/dao/ScoreDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/dao/ScoreDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/data/GameScore$GameScoreBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/data/GameScore$GameScoreBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/data/GameScore.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/user/data/GameScore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/creategallery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/creategallery.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/gallery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/gallery.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/lobby.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/lobby.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/mydaily.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/mydaily.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/mypicture.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/mypicture.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/updategallery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/views/updategallery.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/dao/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/dao/ScoreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/dao/ScoreDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/data/GameScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/data/GameScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/quiz7.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/quiz7.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/quiz7.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/quiz7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/quiz7.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/quiz7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/creategallery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/creategallery.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/gallery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/gallery.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lobby.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lobby.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mydaily.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mydaily.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mypicture.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mypicture.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/updategallery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/updategallery.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/GamescoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/user/controller/GamescoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/resources/css/buggame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/resources/css/buggame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/resources/js/buggame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/resources/js/buggame.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -440,7 +416,7 @@
       <workItem from="1592896735384" duration="44000" />
       <workItem from="1592896797275" duration="5347000" />
       <workItem from="1592940521462" duration="26016000" />
-      <workItem from="1593106496425" duration="14327000" />
+      <workItem from="1593106496425" duration="17016000" />
     </task>
     <servers />
   </component>
@@ -523,65 +499,65 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="658" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1592778274665" />
-    <state width="1293" height="290" key="GridCell.Tab.0.bottom" timestamp="1593124360000">
+    <state width="1293" height="290" key="GridCell.Tab.0.bottom" timestamp="1593141419950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593124360000" />
+    <state width="1293" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593141419950" />
     <state width="1293" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.0.center" timestamp="1593124359999">
+    <state width="1293" height="290" key="GridCell.Tab.0.center" timestamp="1593141419950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.0.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593124359999" />
+    <state width="1293" height="290" key="GridCell.Tab.0.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593141419950" />
     <state width="1293" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647859" />
-    <state width="1293" height="290" key="GridCell.Tab.0.left" timestamp="1593124359999">
+    <state width="1293" height="290" key="GridCell.Tab.0.left" timestamp="1593141419950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.0.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593124359999" />
+    <state width="1293" height="290" key="GridCell.Tab.0.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593141419950" />
     <state width="1293" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647859" />
-    <state width="1293" height="290" key="GridCell.Tab.0.right" timestamp="1593124359999">
+    <state width="1293" height="290" key="GridCell.Tab.0.right" timestamp="1593141419950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.0.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593124359999" />
+    <state width="1293" height="290" key="GridCell.Tab.0.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593141419950" />
     <state width="1293" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.1.bottom" timestamp="1593124359917">
+    <state width="1293" height="290" key="GridCell.Tab.1.bottom" timestamp="1593141419950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593124359917" />
+    <state width="1293" height="290" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593141419950" />
     <state width="1293" height="284" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.1.center" timestamp="1593124359917">
+    <state width="1293" height="290" key="GridCell.Tab.1.center" timestamp="1593141419950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.1.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593124359917" />
+    <state width="1293" height="290" key="GridCell.Tab.1.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593141419950" />
     <state width="1293" height="284" key="GridCell.Tab.1.center/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.1.left" timestamp="1593124359917">
+    <state width="1293" height="290" key="GridCell.Tab.1.left" timestamp="1593141419950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.1.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593124359917" />
+    <state width="1293" height="290" key="GridCell.Tab.1.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593141419950" />
     <state width="1293" height="284" key="GridCell.Tab.1.left/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.1.right" timestamp="1593124359917">
+    <state width="1293" height="290" key="GridCell.Tab.1.right" timestamp="1593141419950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.1.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593124359917" />
+    <state width="1293" height="290" key="GridCell.Tab.1.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593141419950" />
     <state width="1293" height="284" key="GridCell.Tab.1.right/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.2.bottom" timestamp="1593124359918">
+    <state width="1293" height="290" key="GridCell.Tab.2.bottom" timestamp="1593141419951">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593124359918" />
+    <state width="1293" height="290" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593141419951" />
     <state width="1293" height="284" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.2.center" timestamp="1593124359917">
+    <state width="1293" height="290" key="GridCell.Tab.2.center" timestamp="1593141419950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.2.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593124359917" />
+    <state width="1293" height="290" key="GridCell.Tab.2.center/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593141419950" />
     <state width="1293" height="284" key="GridCell.Tab.2.center/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.2.left" timestamp="1593124359917">
+    <state width="1293" height="290" key="GridCell.Tab.2.left" timestamp="1593141419950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.2.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593124359917" />
+    <state width="1293" height="290" key="GridCell.Tab.2.left/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593141419950" />
     <state width="1293" height="284" key="GridCell.Tab.2.left/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
-    <state width="1293" height="290" key="GridCell.Tab.2.right" timestamp="1593124359917">
+    <state width="1293" height="290" key="GridCell.Tab.2.right" timestamp="1593141419950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="290" key="GridCell.Tab.2.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593124359917" />
+    <state width="1293" height="290" key="GridCell.Tab.2.right/0.0.1920.1040/1920.158.1920.1040@0.0.1920.1040" timestamp="1593141419950" />
     <state width="1293" height="284" key="GridCell.Tab.2.right/0.0.1920.1040/1920.158.1920.1040@1920.158.1920.1040" timestamp="1592977647860" />
     <state width="1293" height="282" key="GridCell.Tab.3.bottom" timestamp="1592760790048">
       <screen x="0" y="0" width="1920" height="1040" />
