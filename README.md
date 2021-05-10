@@ -32,7 +32,7 @@ Spring Mvc 구조로 만든 간단한 Portal Service를 구현해보았음
 
 ## 로그인페이지
 
-![login](./images/login.png)
+![login](./Images/login.png)
 
 간단한 로그인 화면으로 구현. 
 
