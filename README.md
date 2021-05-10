@@ -46,7 +46,7 @@ URL:https://github.com/Renoris/portalservice/blob/master/README_Study.md
 
 입력시 
 
-```
+```java
 @PostMapping(path = "/login")
 public Model Login(HttpServletRequest request, HttpServletResponse response, Model model, HttpSession session, @ModelAttribute UserAccount userAccount) throws IOException {
     try {
@@ -218,7 +218,7 @@ public Model createcomment(@RequestParam Integer id,Model model ,HttpSession ses
 
 Controller
 
-```
+```java
 @PostMapping(path ="/buggame")
 public Model insertscore(@ModelAttribute GameScore score,Model model, HttpSession session) {
     try {
