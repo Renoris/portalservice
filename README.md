@@ -8,9 +8,9 @@ Spring Mvc 구조로 만든 간단한 Portal Service를 구현해보았음
 
 **framework**:Spring
 
-**Tool:**bootstrap
+**Tool**:bootstrap
 
-**Database:**mysql
+**Database**:mysql
 
 
 
